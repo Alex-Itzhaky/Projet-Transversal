@@ -284,7 +284,6 @@ GameObject:
   - component: {fileID: 477005561}
   - component: {fileID: 477005560}
   - component: {fileID: 477005563}
-  - component: {fileID: 477005564}
   - component: {fileID: 477005565}
   m_Layer: 0
   m_Name: Player
@@ -416,19 +415,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &477005564
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 477005559}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfecc8fa941cbd946bb95b9a11ffda1c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  moveSpeed: 10
 --- !u!58 &477005565
 CircleCollider2D:
   m_ObjectHideFlags: 0
