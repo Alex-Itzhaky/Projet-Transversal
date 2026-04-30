@@ -2,15 +2,15 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private SpriteRenderer spriteRenderer;
-    private Rigidbody2D rb;
+    private SpriteRenderer _spriteRenderer;
+    private Rigidbody2D _rb;
 
-    [SerializeField] private float moveSpeed = 10f;
-    private Vector2 movement;
+    [SerializeField] private float _moveSpeed = 10f;
+    private Vector2 _movement;
 
     private void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        _rb = GetComponent<Rigidbody2D>();
     }
 
     private void Update()
@@ -21,7 +21,7 @@ public class PlayerMovement : MonoBehaviour
 
     void movePlayer()
     {
-        movement = InputManager.movement;
-        rb.linearVelocity = movement * moveSpeed;
+        _movement = InputManager.movement;
+        _rb.linearVelocity = _movement * _moveSpeed;
     }
 }
