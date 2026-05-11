@@ -7,70 +7,66 @@
             "id": "15df00ec-861d-4435-a6c1-255f5fd3db7b",
             "actions": [
                 {
-                    "name": "Move",
+                    "name": "MousePosition",
                     "type": "Value",
-                    "id": "b728ad87-1bf3-4f9b-acfa-c9825f478cf4",
+                    "id": "3f97b682-4920-48cc-a2ac-14d949e2cb7b",
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Click",
+                    "type": "Button",
+                    "id": "8cb40ce1-7d65-4ba1-a666-d6861e8b1126",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Pause",
+                    "type": "Button",
+                    "id": "4999eae1-12b9-4db8-bd0a-acc09847b1ca",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
                 {
-                    "name": "2D Vector",
-                    "id": "87cd724a-6b31-408e-8af4-73ad9f0b54a2",
-                    "path": "2DVector",
+                    "name": "",
+                    "id": "fe3033e4-c6c3-4a1e-9c2e-3c25dc08b1cd",
+                    "path": "<Mouse>/position",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Move",
-                    "isComposite": true,
+                    "action": "MousePosition",
+                    "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "up",
-                    "id": "6c4dad56-c976-45f0-b5b3-2e51773cce3e",
-                    "path": "<Keyboard>/w",
+                    "name": "",
+                    "id": "26dc0e91-c444-49ee-8e1c-2796edecc832",
+                    "path": "<Mouse>/leftButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Move",
+                    "action": "Click",
                     "isComposite": false,
-                    "isPartOfComposite": true
+                    "isPartOfComposite": false
                 },
                 {
-                    "name": "down",
-                    "id": "3947d933-0647-4dd1-8720-72430630f885",
-                    "path": "<Keyboard>/s",
+                    "name": "",
+                    "id": "bc1baec6-df8f-4e0b-884a-312667288e60",
+                    "path": "<Keyboard>/escape",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Move",
+                    "action": "Pause",
                     "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "left",
-                    "id": "54ee89af-e4e8-4b2c-92f6-46fd8626a4e6",
-                    "path": "<Keyboard>/a",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "right",
-                    "id": "bfb47023-c782-4fbb-8cb7-20cff0a4a4d5",
-                    "path": "<Keyboard>/d",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": true
+                    "isPartOfComposite": false
                 }
             ]
         }
