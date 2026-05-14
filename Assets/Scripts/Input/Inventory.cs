@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    private int _reputationPoints;
-    private int _hydrophones;
-    private int _cleaningBoats;
-    private int _rescuingBoats;
+    public int reputationPoints = 0;
+    public int hydrophones;
+    public int cleaningBoats;
+    public int rescuingBoats;
 }

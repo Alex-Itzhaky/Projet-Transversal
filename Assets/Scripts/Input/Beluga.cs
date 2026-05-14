@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -8,12 +7,6 @@ public class Beluga : MonoBehaviour
     [SerializeField] private Rigidbody2D _rigidbody2D;
     private float _moveSpeed = 2.5f;
     private float _waitingTimer = 0f;
-    private bool isTrapped;
-    
-    public Beluga()
-    {
-        isTrapped = false;
-    }
     
     private void BelugaMove()
     {
