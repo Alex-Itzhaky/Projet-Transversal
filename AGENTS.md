@@ -2,7 +2,7 @@
 - Project name: Projet-Transversal
 - Unity version: Unity 6000.3.11f1
 - Active scene:
-  - Name: MainMenu
+  - Name: Beluga
   - Tags:
     - Untagged, Respawn, Finish, EditorOnly, MainCamera, Player, GameController, Beluga, Trash, Boat, Hydrophone
   - Layers:
