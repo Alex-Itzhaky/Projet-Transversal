@@ -1,6 +1,7 @@
 using System;
 using DG.Tweening;
 using UnityEngine;
+using System.Collections;
 using Random = UnityEngine.Random;
 
 public class Beluga : MonoBehaviour
@@ -10,14 +11,24 @@ public class Beluga : MonoBehaviour
     [SerializeField] private SpriteRenderer _belugaSprite;
     private float _moveSpeed = 2.5f;
     private float _waitingTimer = 0f;
+    private bool _isBelugaSick = false;
+    private bool _isBelugaDead = false;
+    [SerializeField] private float _timeToDie;
     
     private void BelugaMove()
     {
-        Vector3 direction = Vector3.zero;
-        direction.x += Random.Range(-2, 2);
-        direction.y += Random.Range(-2, 2);
-        direction.Normalize();
-        _rigidbody2D.linearVelocity = direction * _moveSpeed;
+        if (_isBelugaDead || _isBelugaSick)
+        {
+            _rigidbody2D.linearVelocity = Vector2.zero;
+        }
+        else
+        {
+            Vector3 direction = Vector3.zero;
+            direction.x += Random.Range(-2, 2);
+            direction.y += Random.Range(-2, 2);
+            direction.Normalize();
+            _rigidbody2D.linearVelocity = direction * _moveSpeed;
+        }
 
     }
     
@@ -29,6 +40,7 @@ public class Beluga : MonoBehaviour
             _waitingTimer = 0f;
             BelugaMove();
         }
+
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -36,6 +48,18 @@ public class Beluga : MonoBehaviour
         if (other.gameObject.CompareTag("Boat") || other.gameObject.CompareTag("Hydrophone"))
         {
             _belugaSprite.DOFade(1, 1);
+        }
+        if (other.gameObject.CompareTag("Trash"))
+        {
+            Debug.Log(other.gameObject.tag);
+            TrashZone trashZone = other.gameObject.GetComponent<TrashZone>();
+            Debug.Log(trashZone.name);
+            if (!trashZone.isBelugaTrappedInside)
+            {
+                trashZone.currentBelugaTrapped = this;
+                trashZone.isBelugaTrappedInside = true;
+                StartCoroutine(BelugaSicknessCoroutine());
+            }
         }
     }
     
@@ -46,4 +70,31 @@ public class Beluga : MonoBehaviour
             _belugaSprite.DOFade(0, 1);
         }
     }
+
+    public void HealBeluga()
+    {
+        //Jouer les anims/particules si y en a
+        //Rajouter les points de reputation
+        Debug.Log("Heal Beluga");
+        _belugaSprite.DOFade(0, 1).OnComplete(()=> Destroy(gameObject));
+    }
+
+    private IEnumerator BelugaSicknessCoroutine()
+    {
+        Debug.Log("Commence à die le beluga");
+        _isBelugaSick = true;
+        yield return new WaitForSeconds(_timeToDie);
+        _isBelugaDead = true;
+        _isBelugaSick = false;
+        KillBeluga();
+    }
+
+    private void KillBeluga()
+    {
+        //Jouer anims
+        //déduire score
+        _belugaSprite.DOFade(0, 1).OnComplete( ()=> Destroy(gameObject));
+    }
+
+
 }

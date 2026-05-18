@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6216689925371976445}
   - component: {fileID: 5235517345259160190}
   - component: {fileID: 4415011970621582489}
+  - component: {fileID: 4225173850638437333}
   m_Layer: 0
   m_Name: Beluga
   m_TagString: Beluga
@@ -107,6 +108,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Beluga
   _rigidbody2D: {fileID: 5235517345259160190}
+  _belugaSprite: {fileID: 3672779437096090200}
+  _immunityDuration: 0
+  _timeToDie: 10
 --- !u!50 &5235517345259160190
 Rigidbody2D:
   serializedVersion: 5
@@ -170,3 +174,25 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
+--- !u!95 &4225173850638437333
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7674022743256059370}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d132e303a1ea1d2438fe374c97fd6396, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

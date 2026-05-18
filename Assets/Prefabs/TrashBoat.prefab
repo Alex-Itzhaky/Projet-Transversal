@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2815581727778340533}
-  - component: {fileID: 1489144824569418113}
-  - component: {fileID: 4836605850781724328}
+  - component: {fileID: 6597600792460888407}
+  - component: {fileID: 5011833190280399677}
   m_Layer: 0
   m_Name: Colliders
   m_TagString: Boat
@@ -33,8 +33,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1928737973488624510}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!70 &1489144824569418113
-CapsuleCollider2D:
+--- !u!61 &6597600792460888407
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -67,45 +67,30 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1.1115205, y: 2.0693183}
-  m_Direction: 0
---- !u!58 &4836605850781724328
-CircleCollider2D:
+  m_Offset: {x: 0.0017504096, y: -0.16116142}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.8213805, y: 0.27162743}
+  m_EdgeRadius: 0
+--- !u!114 &5011833190280399677
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 327656175050502470}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 2.5
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b509283b0bb5f74db8f73016d806479, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerRelay
 --- !u!1 &1547065228360294411
 GameObject:
   m_ObjectHideFlags: 0
@@ -116,10 +101,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1928737973488624510}
   - component: {fileID: 1840486026986460424}
-  - component: {fileID: 8422337774030088485}
+  - component: {fileID: 5421410637021497056}
+  - component: {fileID: 9091535759992892378}
   m_Layer: 0
-  m_Name: Boat
-  m_TagString: Boat
+  m_Name: TrashBoat
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -139,6 +125,7 @@ Transform:
   m_Children:
   - {fileID: 5935880317518451482}
   - {fileID: 2815581727778340533}
+  - {fileID: 5655435495418169949}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &1840486026986460424
@@ -168,7 +155,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &8422337774030088485
+--- !u!114 &5421410637021497056
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -177,15 +164,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1547065228360294411}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 516924f1a07cad64fbd9e7dc0be656a6, type: 3}
+  m_Script: {fileID: 11500000, guid: 64fb95b9da70c674b809ad023e084701, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Boat
+  m_EditorClassIdentifier: Assembly-CSharp::TrashBoat
   _rb: {fileID: 1840486026986460424}
-  _collider: {fileID: 1489144824569418113}
+  _collider: {fileID: 6597600792460888407}
   grid: {fileID: 0}
   islandTilemap: {fileID: 0}
-  _moveSpeed: 2
-  _trashCollectDuration: 4
+  _moveSpeed: 3
   BoatIsSelected:
     m_PersistentCalls:
       m_Calls:
@@ -216,6 +202,98 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  _trashCollectDuration: 4
+  _relay: {fileID: 5011833190280399677}
+--- !u!95 &9091535759992892378
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547065228360294411}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0834d55d631e4b14bb3b3e978f59085f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &3033682218199500013
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5655435495418169949}
+  - component: {fileID: 4567955646375937422}
+  m_Layer: 2
+  m_Name: Triggers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5655435495418169949
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3033682218199500013}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1928737973488624510}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &4567955646375937422
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3033682218199500013}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 2.5
 --- !u!1 &3742023356734190666
 GameObject:
   m_ObjectHideFlags: 0
@@ -226,6 +304,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5935880317518451482}
   - component: {fileID: 4321158950748708219}
+  - component: {fileID: 1385169820688475320}
   - component: {fileID: 8042560319973777293}
   m_Layer: 0
   m_Name: Graphics
@@ -275,7 +354,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 58815ad8068e10b4ab7e66749dd321d7, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -298,7 +377,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
+  m_Sprite: {fileID: -1603153735928504590, guid: d1c415b62cc778a4e8b98067dc0614b6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -308,6 +387,28 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!95 &1385169820688475320
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3742023356734190666}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 58422d122e6a627469c8b4ba809a70a6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &8042560319973777293
 MonoBehaviour:
   m_ObjectHideFlags: 0

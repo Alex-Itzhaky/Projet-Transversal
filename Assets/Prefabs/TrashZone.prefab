@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7834309617368348746}
   - component: {fileID: 3203186547677088446}
-  m_Layer: 0
+  - component: {fileID: 3739503183369414899}
+  m_Layer: 2
   m_Name: TrashZone
   m_TagString: Trash
   m_Icon: {fileID: 0}
@@ -68,3 +69,17 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 2.5
+--- !u!114 &3739503183369414899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5635447442449653550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18aaef7179a318f48906b071ab3a3a24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TrashZone
+  isBelugaTrappedInside: 0
+  currentBelugaTrapped: {fileID: 0}
