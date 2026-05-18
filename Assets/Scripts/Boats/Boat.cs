@@ -1,18 +1,18 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using DG.Tweening;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Tilemaps;
+using UnityEngine.Events;
 
 public class Boat : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] private Rigidbody2D _rb;
     [SerializeField] private CapsuleCollider2D _collider;
-    [SerializeField] private Grid _grid;
-    [SerializeField] private Tilemap _islandTilemap;
+    [SerializeField] public Grid grid;
+    [SerializeField] public Tilemap islandTilemap;
     private GameObject _currentTrashZone;
 
     [Header("Variables")]
@@ -23,6 +23,9 @@ public class Boat : MonoBehaviour
     private bool _isBoatSelected = false;
     private bool _canBoatMove = true;
 
+    public UnityEvent BoatIsSelected;
+    public UnityEvent BoatIsUnselected;
+
     private void Start()
     {
         _currentBoatState = BoatState.Idle;
@@ -30,14 +33,15 @@ public class Boat : MonoBehaviour
 
     private void Update()
     {
-        SetNewTargetPositionOnClick();//Important de garder cet ordre de prioritï¿½ sinon on dï¿½sï¿½lectionne le bateau avant de choisir la nouvelle destination
+        SetNewTargetPositionOnClick();//Important de garder cet ordre de priorité sinon on désélectionne le bateau avant de choisir la nouvelle destination
         SelectBoat();
+        CheckGameOver();
     }
 
     private void FixedUpdate()
     {
         FollowTargetPosition();
-        RotateTowardsTargetPosition();
+        //RotateTowardsTargetPosition();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -50,12 +54,15 @@ public class Boat : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Beluga"))
         {
-            SpriteRenderer _belugaSprite = collision.GetComponent<SpriteRenderer>();
-            _belugaSprite.DOFade(0, 1);
+            //Trigger game over
+            Debug.Log("Game Over");
+#if UNITY_EDITOR
+            EditorApplication.ExitPlaymode();
+#endif
         }
     }
 
@@ -86,12 +93,14 @@ public class Boat : MonoBehaviour
         if (hit.collider != null && hit.collider == _collider)
         {
             _isBoatSelected = true;
-            Debug.Log($"Bateau Sï¿½lectionnï¿½ : {_isBoatSelected}");
+            BoatIsSelected.Invoke();
+            Debug.Log($"Bateau Sélectionné : {_isBoatSelected}");
         }
         else
         {
             _isBoatSelected = false;
-            Debug.Log($"Bateau Dï¿½sï¿½lectionnï¿½ : {_isBoatSelected}");
+            BoatIsUnselected.Invoke();
+            Debug.Log($"Bateau Désélectionné : {_isBoatSelected}");
         }
     }
 
@@ -100,9 +109,9 @@ public class Boat : MonoBehaviour
         if (!InputManager.Instance.IsLeftClicking || !_isBoatSelected || _currentBoatState == BoatState.CollectingTrash || _currentBoatState == BoatState.Repairing)
             return;
         Vector3 mousePosition = Camera.main.ScreenToWorldPoint(InputManager.Instance.MousePosition);
-        Vector3Int gridPosition = _grid.WorldToCell(mousePosition);
+        Vector3Int gridPosition = grid.WorldToCell(mousePosition);
 
-        if (_islandTilemap.HasTile(gridPosition))
+        if (islandTilemap.HasTile(gridPosition))
         {
             return;
         }
@@ -123,10 +132,15 @@ public class Boat : MonoBehaviour
         dir.Normalize();
         _rb.linearVelocity = dir * _moveSpeed;
     }
-
-    private void RotateTowardsTargetPosition()
+    private void CheckGameOver()
     {
-        float angle = Mathf.Atan2(_targetPosition.y - transform.position.y, _targetPosition.x - transform.position.x) * Mathf.Rad2Deg - 90;
-        transform.eulerAngles = new Vector3(0, 0, angle);
+
     }
+
+
+    //private void RotateTowardsTargetPosition()
+    //{
+    //    float angle = Mathf.Atan2(_targetPosition.y - transform.position.y, _targetPosition.x - transform.position.x) * Mathf.Rad2Deg - 90;
+    //    transform.eulerAngles = new Vector3(0, 0, angle);
+    //}
 }
