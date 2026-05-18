@@ -28,7 +28,7 @@ public class TrashSpawner : MonoBehaviour
         return Random.Range(_minTrashRadius, _maxTrashRadius);
     }
 
-    private void SpawnTrashZone()
+    public void SpawnTrashZone()
     {
         GameObject trashZoneInstance = Instantiate(_trashPrefab);
         trashZoneInstance.transform.position = GetRandomPosition();

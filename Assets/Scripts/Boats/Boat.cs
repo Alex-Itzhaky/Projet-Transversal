@@ -19,6 +19,7 @@ public class Boat : MonoBehaviour
     private BoatState _currentBoatState;
     private Vector2 _targetPosition;
     private bool _isBoatSelected = false;
+    private bool _canBoatMove = true;
 
     private void Start()
     {
@@ -49,6 +50,7 @@ public class Boat : MonoBehaviour
 
     private IEnumerator CollectTrashCoroutine()
     {
+        _canBoatMove = false;
         _currentBoatState = BoatState.CollectingTrash;
         _targetPosition = _currentTrashZone.transform.position;
         while (_rb.linearVelocity.magnitude > .1f)
@@ -59,12 +61,13 @@ public class Boat : MonoBehaviour
         yield return new WaitForSeconds(_trashCollectDuration);
         _currentBoatState = BoatState.Idle;
         Destroy(_currentTrashZone);
+        _canBoatMove = true;
 
     }
 
     private void SelectBoat()
     {
-        if (!InputManager.Instance.IsLeftClicking)
+        if (!InputManager.Instance.IsLeftClicking || _currentBoatState == BoatState.CollectingTrash || _currentBoatState == BoatState.Repairing)
             return;
         Vector2 mousePosition = Camera.main.ScreenToWorldPoint(InputManager.Instance.MousePosition);
         RaycastHit2D hit = Physics2D.Raycast(mousePosition, Vector2.zero);
@@ -83,7 +86,7 @@ public class Boat : MonoBehaviour
 
     private void SetNewTargetPositionOnClick()
     {
-        if (!InputManager.Instance.IsLeftClicking || !_isBoatSelected)
+        if (!InputManager.Instance.IsLeftClicking || !_isBoatSelected || _currentBoatState == BoatState.CollectingTrash || _currentBoatState == BoatState.Repairing)
             return;
         Vector3 mousePosition = Camera.main.ScreenToWorldPoint(InputManager.Instance.MousePosition);
         Vector3Int gridPosition = _grid.WorldToCell(mousePosition);
