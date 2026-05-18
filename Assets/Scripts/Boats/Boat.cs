@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Tilemaps;
@@ -28,7 +30,7 @@ public class Boat : MonoBehaviour
 
     private void Update()
     {
-        SetNewTargetPositionOnClick();//Important de garder cet ordre de priorité sinon on désélectionne le bateau avant de choisir la nouvelle destination
+        SetNewTargetPositionOnClick();//Important de garder cet ordre de prioritï¿½ sinon on dï¿½sï¿½lectionne le bateau avant de choisir la nouvelle destination
         SelectBoat();
     }
 
@@ -45,6 +47,15 @@ public class Boat : MonoBehaviour
             _currentBoatState = BoatState.CollectingTrash;
             _currentTrashZone = collision.gameObject;
             StartCoroutine(CollectTrashCoroutine());
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Beluga"))
+        {
+            SpriteRenderer _belugaSprite = collision.GetComponent<SpriteRenderer>();
+            _belugaSprite.DOFade(0, 1);
         }
     }
 
@@ -75,12 +86,12 @@ public class Boat : MonoBehaviour
         if (hit.collider != null && hit.collider == _collider)
         {
             _isBoatSelected = true;
-            Debug.Log($"Bateau Sélectionné : {_isBoatSelected}");
+            Debug.Log($"Bateau Sï¿½lectionnï¿½ : {_isBoatSelected}");
         }
         else
         {
             _isBoatSelected = false;
-            Debug.Log($"Bateau Désélectionné : {_isBoatSelected}");
+            Debug.Log($"Bateau Dï¿½sï¿½lectionnï¿½ : {_isBoatSelected}");
         }
     }
 

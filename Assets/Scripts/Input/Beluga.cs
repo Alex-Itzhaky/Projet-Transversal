@@ -1,3 +1,5 @@
+using System;
+using DG.Tweening;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -5,6 +7,7 @@ public class Beluga : MonoBehaviour
 {
 
     [SerializeField] private Rigidbody2D _rigidbody2D;
+    [SerializeField] private SpriteRenderer _belugaSprite;
     private float _moveSpeed = 2.5f;
     private float _waitingTimer = 0f;
     
@@ -27,5 +30,20 @@ public class Beluga : MonoBehaviour
             BelugaMove();
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Boat") || other.gameObject.CompareTag("Hydrophone"))
+        {
+            _belugaSprite.DOFade(1, 1);
+        }
+    }
     
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Boat") || other.gameObject.CompareTag("Hydrophone"))
+        {
+            _belugaSprite.DOFade(0, 1);
+        }
+    }
 }

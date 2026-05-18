@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 3
   tags:
   - Beluga
+  - Trash
+  - Boat
+  - Hydrophone
   layers:
   - Default
   - TransparentFX
