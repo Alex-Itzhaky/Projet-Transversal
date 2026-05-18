@@ -1,9 +1,17 @@
+using System;
 using UnityEngine;
-
-public class Inventory : MonoBehaviour
+[Serializable]
+public class Inventory
 {
     public int reputationPoints = 0;
-    public int hydrophones;
-    public int cleaningBoats;
-    public int rescuingBoats;
+
+    public void AddPoints(int amount)
+    {
+        reputationPoints += amount;
+    }
+
+    public void RemovePoints(int amount)
+    {
+        reputationPoints -= amount;
+    }
 }
