@@ -8,8 +8,7 @@ public class Gameloop : MonoBehaviour
     [SerializeField] private float _baseBelugaSpawnTimer;
     [SerializeField] private float _baseTrashSpawnTimer;
 
-    [SerializeField] private GameObject _belugaPrefab;
-    [SerializeField] private TrashSpawner _trashSpawner;
+    [SerializeField] private EventSpawner _eventSpawner;
 
     private float _currentBelugaSpawnTimer;
     private float _currentTrashSpawnTimer;
@@ -22,11 +21,13 @@ public class Gameloop : MonoBehaviour
     private bool _canBelugaSpawn = true;
     private bool _canTrashSpawn = true;
 
-    private void Start()
+    private IEnumerator Start()
     {
-        _trashSpawner.SpawnTrashZone();
+        _eventSpawner.SpawnTrashZone();
         _currentBelugaSpawnTimer = _baseBelugaSpawnTimer;
         _currentTrashSpawnTimer = _baseTrashSpawnTimer;
+        yield return new WaitForSeconds(5);
+        _eventSpawner.SpawnBeluga();
     }
 
     private void Update()
@@ -44,7 +45,7 @@ public class Gameloop : MonoBehaviour
         _canBelugaSpawn = false;
         yield return new WaitForSeconds(time);
         _canBelugaSpawn = true;
-        SpawnBeluga();
+        _eventSpawner.SpawnBeluga();
     }
 
     private void SpawnBeluga()
@@ -58,7 +59,7 @@ public class Gameloop : MonoBehaviour
         _canTrashSpawn = false;
         yield return new WaitForSeconds(time);
         _canTrashSpawn = true;
-        _trashSpawner.SpawnTrashZone();
+        _eventSpawner.SpawnTrashZone();
     }
 
     private float GetRandomizedTimer(float time)

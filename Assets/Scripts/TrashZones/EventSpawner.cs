@@ -1,8 +1,9 @@
 using UnityEngine;
 
-public class TrashSpawner : MonoBehaviour
+public class EventSpawner : MonoBehaviour
 {
     [SerializeField] private GameObject _trashPrefab;
+    [SerializeField] private GameObject _belugaPrefab;
 
     [Header("TrashZone Radius Settings")]
     [SerializeField] private float _minTrashRadius;
@@ -35,6 +36,12 @@ public class TrashSpawner : MonoBehaviour
         trashZoneInstance.GetComponent<CircleCollider2D>().radius = GetRandomRadius();
     }
 
+    public void SpawnBeluga()
+    {
+        GameObject belugaInstance = Instantiate(_belugaPrefab);
+        belugaInstance.transform.position = GetRandomPosition();
+    }
+
     //Debugging
 
     private void OnDrawGizmos()
@@ -53,6 +60,12 @@ public class TrashSpawner : MonoBehaviour
     private void TestTrashSpawn()
     {
         SpawnTrashZone();
+    }
+
+    [ContextMenu("Test SpawnBeluga")]
+    private void TestBelugaSpawn()
+    {
+        SpawnBeluga();
     }
 
 }
