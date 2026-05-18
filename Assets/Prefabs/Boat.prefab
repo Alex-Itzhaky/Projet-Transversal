@@ -145,10 +145,40 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Boat
   _rb: {fileID: 1840486026986460424}
   _collider: {fileID: 1489144824569418113}
-  _grid: {fileID: 0}
-  _islandTilemap: {fileID: 0}
+  grid: {fileID: 0}
+  islandTilemap: {fileID: 0}
   _moveSpeed: 2
   _trashCollectDuration: 4
+  BoatIsSelected:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8042560319973777293}
+        m_TargetAssemblyTypeName: SelectBoatShader, Assembly-CSharp
+        m_MethodName: CallSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  BoatIsUnselected:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8042560319973777293}
+        m_TargetAssemblyTypeName: SelectBoatShader, Assembly-CSharp
+        m_MethodName: CallUnselect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3742023356734190666
 GameObject:
   m_ObjectHideFlags: 0
@@ -159,6 +189,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5935880317518451482}
   - component: {fileID: 4321158950748708219}
+  - component: {fileID: 8042560319973777293}
   m_Layer: 0
   m_Name: Graphics
   m_TagString: Untagged
@@ -207,7 +238,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 58815ad8068e10b4ab7e66749dd321d7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -240,3 +271,66 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &8042560319973777293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3742023356734190666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3272f32f8941df040a04b3162d02d7a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SelectBoatShader
+  _selectColor: {r: 0.12882164, g: 0.6150943, b: 0.24589425, a: 1}
+  _selectOpacity: 0.5
+  _selectTime: 0.2
+  _selectAnimCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2.305531
+      outSlope: 2.305531
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.21666504
+      value: 0.499528
+      inSlope: 2.305531
+      outSlope: 2.305531
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _unselectAnimCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.5
+      inSlope: -2.5
+      outSlope: -2.5
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.2
+      value: 0
+      inSlope: -2.5
+      outSlope: -2.5
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
