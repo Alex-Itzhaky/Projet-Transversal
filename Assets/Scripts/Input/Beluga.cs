@@ -11,6 +11,7 @@ public class Beluga : MonoBehaviour
     [SerializeField] private SpriteRenderer _belugaSprite;
     private float _moveSpeed = 2.5f;
     private float _waitingTimer = 0f;
+    private bool _isBelugaMoving = false;
     private bool _isBelugaSick = false;
     private bool _isBelugaDead = false;
     [SerializeField] private float _timeToDie;
@@ -29,7 +30,13 @@ public class Beluga : MonoBehaviour
             direction.Normalize();
             _rigidbody2D.linearVelocity = direction * _moveSpeed;
         }
-
+    }
+    
+    private IEnumerator MoveCoroutine()
+    {
+        
+        yield return new WaitForSeconds(3);
+        BelugaMove();
     }
     
     private void Update()
@@ -38,7 +45,17 @@ public class Beluga : MonoBehaviour
         if (_waitingTimer >= Random.Range(1, 2))
         {
             _waitingTimer = 0f;
-            BelugaMove();
+            if (!_isBelugaMoving)
+            {
+                BelugaMove();
+                _isBelugaMoving = true;
+            }
+            else
+            {
+                Vector3 stop = new Vector3(0, 0, 0);
+                _rigidbody2D.linearVelocity = stop;
+                _isBelugaMoving = false;
+            }
         }
 
     }
@@ -81,7 +98,7 @@ public class Beluga : MonoBehaviour
 
     private IEnumerator BelugaSicknessCoroutine()
     {
-        Debug.Log("Commence à die le beluga");
+        Debug.Log("Commence ï¿½ die le beluga");
         _isBelugaSick = true;
         yield return new WaitForSeconds(_timeToDie);
         _isBelugaDead = true;
@@ -92,7 +109,7 @@ public class Beluga : MonoBehaviour
     private void KillBeluga()
     {
         //Jouer anims
-        //déduire score
+        //dï¿½duire score
         _belugaSprite.DOFade(0, 1).OnComplete( ()=> Destroy(gameObject));
     }
 
