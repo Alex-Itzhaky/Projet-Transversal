@@ -7,7 +7,7 @@ public class Hydrophone : MonoBehaviour
     [SerializeField] private SpriteRenderer _spriteRenderer;
     private SpriteRenderer _belugaSprite;
     private bool _isBroken = false;
-    private Color _neutral = new Color(0,0,255);
+    private Color _neutral = new Color(255,255,255);
     private Color _belugaDetected = new Color(255,0,0);
     private Color _broken = new Color(0, 0, 0);
     

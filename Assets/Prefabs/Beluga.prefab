@@ -85,8 +85,8 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 10
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0, g: 0.20738447, b: 0.3433962, a: 1}
+  m_Sprite: {fileID: 7998113432258254920, guid: 0cf8213b703227a4698e474ff66ec215, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -109,7 +109,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Beluga
   _rigidbody2D: {fileID: 5235517345259160190}
   _belugaSprite: {fileID: 3672779437096090200}
-  _immunityDuration: 0
   _timeToDie: 10
 --- !u!50 &5235517345259160190
 Rigidbody2D:
