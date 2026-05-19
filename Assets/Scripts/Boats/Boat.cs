@@ -9,19 +9,19 @@ using UnityEngine.Events;
 public class Boat : MonoBehaviour
 {
     [Header("References")]
-    [SerializeField] private Rigidbody2D _rb;
-    [SerializeField] private CapsuleCollider2D _collider;
+    [SerializeField] protected Rigidbody2D _rb;
+    [SerializeField] protected BoxCollider2D _collider;
     [SerializeField] public Grid grid;
     [SerializeField] public Tilemap islandTilemap;
-    private GameObject _currentTrashZone;
+    
 
     [Header("Variables")]
     [SerializeField] private float _moveSpeed;
-    [SerializeField] private float _trashCollectDuration;
-    private BoatState _currentBoatState;
-    private Vector2 _targetPosition;
-    private bool _isBoatSelected = false;
-    private bool _canBoatMove = true;
+    
+    protected BoatState _currentBoatState;
+    protected Vector2 _targetPosition;
+    protected bool _isBoatSelected = false;
+    protected bool _canBoatMove = true;
 
     public UnityEvent BoatIsSelected;
     public UnityEvent BoatIsUnselected;
@@ -29,6 +29,7 @@ public class Boat : MonoBehaviour
     private void Start()
     {
         _currentBoatState = BoatState.Idle;
+        _targetPosition = transform.position;
     }
 
     private void Update()
@@ -36,6 +37,9 @@ public class Boat : MonoBehaviour
         SetNewTargetPositionOnClick();//Important de garder cet ordre de priorité sinon on désélectionne le bateau avant de choisir la nouvelle destination
         SelectBoat();
         CheckGameOver();
+        //Debug.Log($"{gameObject.name} State = {_currentBoatState}");
+
+
     }
 
     private void FixedUpdate()
@@ -44,19 +48,11 @@ public class Boat : MonoBehaviour
         //RotateTowardsTargetPosition();
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Trash"))
-        {
-            _currentBoatState = BoatState.CollectingTrash;
-            _currentTrashZone = collision.gameObject;
-            StartCoroutine(CollectTrashCoroutine());
-        }
-    }
+    
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Beluga"))
+        if (collision.gameObject.CompareTag("Beluga") && _currentBoatState != BoatState.Repairing)
         {
             //Trigger game over
             Debug.Log("Game Over");
@@ -66,22 +62,7 @@ public class Boat : MonoBehaviour
         }
     }
 
-    private IEnumerator CollectTrashCoroutine()
-    {
-        _canBoatMove = false;
-        _currentBoatState = BoatState.CollectingTrash;
-        _targetPosition = _currentTrashZone.transform.position;
-        while (_rb.linearVelocity.magnitude > .1f)
-        {
-            yield return null;
-        }
-        Debug.Log("Lock trashZone fini, commence le nettoyage");
-        yield return new WaitForSeconds(_trashCollectDuration);
-        _currentBoatState = BoatState.Idle;
-        Destroy(_currentTrashZone);
-        _canBoatMove = true;
-
-    }
+    
 
     private void SelectBoat()
     {
@@ -89,7 +70,7 @@ public class Boat : MonoBehaviour
             return;
         Vector2 mousePosition = Camera.main.ScreenToWorldPoint(InputManager.Instance.MousePosition);
         RaycastHit2D hit = Physics2D.Raycast(mousePosition, Vector2.zero);
-
+        Debug.Log(hit.collider);
         if (hit.collider != null && hit.collider == _collider)
         {
             _isBoatSelected = true;
@@ -117,7 +98,6 @@ public class Boat : MonoBehaviour
         }
 
         _targetPosition = mousePosition;
-        Debug.Log($"Target Position : {_targetPosition}");
     }
 
     private void FollowTargetPosition()
