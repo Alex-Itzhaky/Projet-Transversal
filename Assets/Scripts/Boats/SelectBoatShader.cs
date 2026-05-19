@@ -1,9 +1,11 @@
+using DG.Tweening;
 using System.Collections;
 using UnityEngine;
 
 public class SelectBoatShader : MonoBehaviour
 {
     [SerializeField] private Color _selectColor;
+    [SerializeField] private Color _baseColor;
     [SerializeField] private float _selectOpacity;
     [SerializeField] private float _selectTime;
     [SerializeField] private AnimationCurve _selectAnimCurve;
@@ -20,36 +22,43 @@ public class SelectBoatShader : MonoBehaviour
     private void Init()
     {
         _material = _spriteRender.material;
-        SetOpacity(0f);
+        _material.SetColor("_FromColor", _baseColor);
+        _material.SetColor("_ToColor", _baseColor);
     }
 
     public void CallSelect()
     {
-        StartCoroutine(SelectCoroutine());
+        //StartCoroutine(SelectCoroutine());
+        _material.SetColor("_FromColor", _baseColor);
+        _material.SetColor("_ToColor", _selectColor);
+        
     }
 
     public void CallUnselect()
     {
         StartCoroutine(UnselectCoroutine());
+
+        _material.SetColor("_FromColor", _baseColor);
+        _material.SetColor("_ToColor", _baseColor);
     }
 
-    private IEnumerator SelectCoroutine()
-    {
-        Debug.Log("SelectShader");
-        _material.SetColor("_SelectColor", _selectColor);
+    //private IEnumerator SelectCoroutine()
+    //{
+    //    //Debug.Log("SelectShader");
+    //    //_material.SetColor("_SelectColor", _selectColor);
 
 
-        float currentOpacity = 0f;
-        float elapsedTime = 0f;
+    //    //float currentOpacity = 0f;
+    //    //float elapsedTime = 0f;
 
-        while (elapsedTime < _selectTime)
-        {
-            elapsedTime += Time.deltaTime;
-            currentOpacity = Mathf.Lerp(_selectOpacity, _selectAnimCurve.Evaluate(elapsedTime), (elapsedTime / _selectTime));
-            SetOpacity(currentOpacity);
-            yield return null;
-        }
-    }
+    //    //while (elapsedTime < _selectTime)
+    //    //{
+    //    //    elapsedTime += Time.deltaTime;
+    //    //    currentOpacity = Mathf.Lerp(_selectOpacity, _selectAnimCurve.Evaluate(elapsedTime), (elapsedTime / _selectTime));
+
+    //    //    yield return null;
+    //    //}
+    //}
 
     private IEnumerator UnselectCoroutine()
     {
@@ -63,13 +72,7 @@ public class SelectBoatShader : MonoBehaviour
         {
             elapsedTime += Time.deltaTime;
             currentOpacity = Mathf.Lerp(0f, _unselectAnimCurve.Evaluate(elapsedTime), (elapsedTime / _selectTime));
-            SetOpacity(currentOpacity);
             yield return null;
         }
-    }
-
-    private void SetOpacity(float amount)
-    {
-        _material.SetFloat("_OpacityAmount", amount);
     }
 }
