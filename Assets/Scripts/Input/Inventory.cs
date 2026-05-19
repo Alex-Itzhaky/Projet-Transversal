@@ -5,22 +5,22 @@ using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
 {
-    public int reputationPoints = 0;
-    public TMP_Text repPointsText;
+    private int _reputationPoints = 0;
+    private TMP_Text _repPointsText;
 
     public void Start()
     {
-        repPointsText.text = reputationPoints.ToString();
+        _repPointsText.text = _reputationPoints.ToString();
     }
     public void AddPoints(int amount)
     {
-        reputationPoints += amount;
-        repPointsText.text = reputationPoints.ToString();
+        _reputationPoints += amount;
+        _repPointsText.text = _reputationPoints.ToString();
     }
 
     public void RemovePoints(int amount)
     {
-        reputationPoints -= amount;
-        repPointsText.text = reputationPoints.ToString();
+        _reputationPoints -= amount;
+        _repPointsText.text = _reputationPoints.ToString();
     }
 }
