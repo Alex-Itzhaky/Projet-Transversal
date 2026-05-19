@@ -572,7 +572,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Gameloop
   _baseBelugaSpawnTimer: 15
   _baseTrashSpawnTimer: 10
-  _eventSpawner: {fileID: 0}
+  _eventSpawner: {fileID: 400528479}
   _timesToDecreaseBelugaTimer:
   - 40
   - 60
@@ -711,7 +711,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 2875470384654330992, guid: fb09a8ceecbc169498df09f4e810a2e6, type: 3}
+  m_Sprite: {fileID: 3654169181060004, guid: fb1d736e8b6e4dc41a52456fd568996e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2275,7 +2275,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1900907532
 MonoBehaviour:
   m_ObjectHideFlags: 0
