@@ -14,7 +14,6 @@ public class Boat : MonoBehaviour
     [SerializeField] protected BoxCollider2D _collider;
     [SerializeField] public Grid grid;
     [SerializeField] public Tilemap islandTilemap;
-    [SerializeField] public BoatLineRenderer boatLineRenderer;
     
 
     [Header("Variables")]
@@ -58,6 +57,7 @@ public class Boat : MonoBehaviour
         {
             //Trigger game over
             Debug.Log("Game Over");
+            
 #if UNITY_EDITOR
             EditorApplication.ExitPlaymode();
 #endif
@@ -112,7 +112,6 @@ public class Boat : MonoBehaviour
         Vector2 dir = _targetPosition - (Vector2) transform.position;
         dir.Normalize();
         _rb.linearVelocity = dir * _moveSpeed;
-        boatLineRenderer.DrawLine();
     }
     private void CheckGameOver()
     {
