@@ -247,15 +247,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.51886785, g: 0.78697854, b: 1, a: 0.10980392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -1191290459924117774, guid: 9dbe064dbfe2a814796f33cd6055a8be, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -910,6 +910,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Beluga
   _rigidbody2D: {fileID: 952061090}
   _belugaSprite: {fileID: 0}
+  _timeToDie: 0
 --- !u!212 &952061088
 SpriteRenderer:
   serializedVersion: 2
@@ -1241,8 +1242,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afa326d9f6c47844e8792faae5aae840, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Inventory
-  reputationPoints: 0
-  repPointsText: {fileID: 944767802}
+  _repPointsText: {fileID: 944767802}
 --- !u!1 &1165118381
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,0 +1,1144 @@
+fileFormatVersion: 2
+guid: b26224556488cd44ca75ee3512a35e3e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -498985992269783255
+    second: Ocean_keeper_0
+  - first:
+      213: 8488464996302173775
+    second: Ocean_keeper_1
+  - first:
+      213: 91238123153928880
+    second: Ocean_keeper_2
+  - first:
+      213: -1455137999066179213
+    second: Ocean_keeper_3
+  - first:
+      213: 2075255440294978138
+    second: Ocean_keeper_4
+  - first:
+      213: -6710289563228307534
+    second: Ocean_keeper_5
+  - first:
+      213: -2881292847608876589
+    second: Ocean_keeper_6
+  - first:
+      213: 2440823977207954913
+    second: Ocean_keeper_7
+  - first:
+      213: -265753307177826450
+    second: Ocean_keeper_8
+  - first:
+      213: -6370574465317780073
+    second: Ocean_keeper_9
+  - first:
+      213: 2479624163808557040
+    second: Ocean_keeper_10
+  - first:
+      213: 9130208359741583782
+    second: Ocean_keeper_11
+  - first:
+      213: 9218758664848122715
+    second: Ocean_keeper_12
+  - first:
+      213: -7139926999119557179
+    second: Ocean_keeper_13
+  - first:
+      213: 5144567500340868187
+    second: Ocean_keeper_14
+  - first:
+      213: 6971092914125282650
+    second: Ocean_keeper_15
+  - first:
+      213: -2898835810542039090
+    second: Ocean_keeper_16
+  - first:
+      213: -5117791893144202430
+    second: Ocean_keeper_17
+  - first:
+      213: -5059803358666606166
+    second: Ocean_keeper_18
+  - first:
+      213: -5823725727855908579
+    second: Ocean_keeper_19
+  - first:
+      213: -650087760430625286
+    second: Ocean_keeper_20
+  - first:
+      213: 5461444214340079645
+    second: Ocean_keeper_21
+  - first:
+      213: 8452357432563000365
+    second: Ocean_keeper_22
+  - first:
+      213: -3379517918081869499
+    second: Ocean_keeper_23
+  - first:
+      213: -3107799980711077957
+    second: Ocean_keeper_24
+  - first:
+      213: 7518197139192530388
+    second: Ocean_keeper_25
+  - first:
+      213: -5746490499620321004
+    second: Ocean_keeper_26
+  - first:
+      213: 1250379302958747052
+    second: Ocean_keeper_27
+  - first:
+      213: -7189470706511063792
+    second: Ocean_keeper_28
+  - first:
+      213: 8014771192976699485
+    second: Ocean_keeper_29
+  - first:
+      213: -5450126517424125265
+    second: Ocean_keeper_30
+  - first:
+      213: -1063214312428854948
+    second: Ocean_keeper_31
+  - first:
+      213: 1246694800145773510
+    second: Ocean_keeper_32
+  - first:
+      213: -2747761055301743824
+    second: Ocean_keeper_33
+  - first:
+      213: 1226875353199428064
+    second: Ocean_keeper_34
+  - first:
+      213: -1843575766492771682
+    second: Ocean_keeper_35
+  - first:
+      213: 3564864647473711515
+    second: Ocean_keeper_36
+  - first:
+      213: -9080752754248318290
+    second: Ocean_keeper_37
+  - first:
+      213: 1526131690087141931
+    second: Ocean_keeper_38
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Ocean_keeper_0
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 113
+        width: 861
+        height: 563
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92f1dde32ee3319f0800000000000000
+      internalID: -498985992269783255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ocean_keeper_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 21
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f46bde8b0f51dc570800000000000000
+      internalID: 8488464996302173775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ocean_keeper_2
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 8
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b23090f694244100800000000000000
+      internalID: 91238123153928880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ocean_keeper_3
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 7
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 379dc7213bf4ecbe0800000000000000
+      internalID: -1455137999066179213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ocean_keeper_4
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 9
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a52aaf8e3d9cccc10800000000000000
+      internalID: 2075255440294978138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ocean_keeper_5
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 8
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bff3c3e13340e2a0800000000000000
+      internalID: -6710289563228307534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ocean_keeper_6
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 9
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d1366cbb679308d0800000000000000
+      internalID: -2881292847608876589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ocean_keeper_7
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 7
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ed7cb8a97c8fd120800000000000000
+      internalID: 2440823977207954913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ocean_keeper_8
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 8
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e67c7cf66cadf4cf0800000000000000
+      internalID: -265753307177826450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ocean_keeper_9
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 8
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7954f8bc64c2797a0800000000000000
+      internalID: -6370574465317780073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ocean_keeper_10
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 8
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f7b8441a05696220800000000000000
+      internalID: 2479624163808557040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ocean_keeper_11
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 9
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a1f2b7112405be70800000000000000
+      internalID: 9130208359741583782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ocean_keeper_12
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 8
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b53a350a92c9fef70800000000000000
+      internalID: 9218758664848122715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ocean_keeper_13
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 8
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cd02472932e9ec90800000000000000
+      internalID: -7139926999119557179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ocean_keeper_14
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 8
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5436dc62ec256740800000000000000
+      internalID: 5144567500340868187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ocean_keeper_15
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 8
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5d1eaa221c4eb060800000000000000
+      internalID: 6971092914125282650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ocean_keeper_16
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 8
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecfc572603445c7d0800000000000000
+      internalID: -2898835810542039090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ocean_keeper_17
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 8
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24314ce6363f9f8b0800000000000000
+      internalID: -5117791893144202430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ocean_keeper_18
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 7
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa9395d37a7f7c9b0800000000000000
+      internalID: -5059803358666606166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ocean_keeper_19
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 8
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1968d15e48fd2fa0800000000000000
+      internalID: -5823725727855908579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ocean_keeper_20
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 8
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afd04be40ac6af6f0800000000000000
+      internalID: -650087760430625286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ocean_keeper_21
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 8
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d105a54b392facb40800000000000000
+      internalID: 5461444214340079645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ocean_keeper_22
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 8
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d24ec8a6d4ecc4570800000000000000
+      internalID: 8452357432563000365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ocean_keeper_23
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 8
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54999a4eb5a8911d0800000000000000
+      internalID: -3379517918081869499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ocean_keeper_24
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 8
+        width: 8
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb710c42260eed4d0800000000000000
+      internalID: -3107799980711077957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ocean_keeper_25
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 8
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d5cde80770065860800000000000000
+      internalID: 7518197139192530388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ocean_keeper_26
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 8
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41949f8365d5040b0800000000000000
+      internalID: -5746490499620321004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ocean_keeper_27
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 7
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cad4b5be95d3a5110800000000000000
+      internalID: 1250379302958747052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ocean_keeper_28
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 8
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 015d45fdb7ed93c90800000000000000
+      internalID: -7189470706511063792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ocean_keeper_29
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 8
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d50f8699fef2a3f60800000000000000
+      internalID: 8014771192976699485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ocean_keeper_30
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 8
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: faa8ff3fec24d54b0800000000000000
+      internalID: -5450126517424125265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ocean_keeper_31
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 8
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c51219b4734be31f0800000000000000
+      internalID: -1063214312428854948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ocean_keeper_32
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 8
+        width: 7
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c3f302c0562d4110800000000000000
+      internalID: 1246694800145773510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ocean_keeper_33
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 7
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03b4613e0edfdd9d0800000000000000
+      internalID: -2747761055301743824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ocean_keeper_34
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 8
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e1422b22acb60110800000000000000
+      internalID: 1226875353199428064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ocean_keeper_35
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 8
+        width: 7
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9a0ea9ab9d4a66e0800000000000000
+      internalID: -1843575766492771682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ocean_keeper_36
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 8
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b99c4096281f87130800000000000000
+      internalID: 3564864647473711515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ocean_keeper_37
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 8
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea201ed5b7faaf180800000000000000
+      internalID: -9080752754248318290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ocean_keeper_38
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 22
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b225c14bfa8ed2510800000000000000
+      internalID: 1526131690087141931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Ocean_keeper_0: -498985992269783255
+      Ocean_keeper_1: 8488464996302173775
+      Ocean_keeper_10: 2479624163808557040
+      Ocean_keeper_11: 9130208359741583782
+      Ocean_keeper_12: 9218758664848122715
+      Ocean_keeper_13: -7139926999119557179
+      Ocean_keeper_14: 5144567500340868187
+      Ocean_keeper_15: 6971092914125282650
+      Ocean_keeper_16: -2898835810542039090
+      Ocean_keeper_17: -5117791893144202430
+      Ocean_keeper_18: -5059803358666606166
+      Ocean_keeper_19: -5823725727855908579
+      Ocean_keeper_2: 91238123153928880
+      Ocean_keeper_20: -650087760430625286
+      Ocean_keeper_21: 5461444214340079645
+      Ocean_keeper_22: 8452357432563000365
+      Ocean_keeper_23: -3379517918081869499
+      Ocean_keeper_24: -3107799980711077957
+      Ocean_keeper_25: 7518197139192530388
+      Ocean_keeper_26: -5746490499620321004
+      Ocean_keeper_27: 1250379302958747052
+      Ocean_keeper_28: -7189470706511063792
+      Ocean_keeper_29: 8014771192976699485
+      Ocean_keeper_3: -1455137999066179213
+      Ocean_keeper_30: -5450126517424125265
+      Ocean_keeper_31: -1063214312428854948
+      Ocean_keeper_32: 1246694800145773510
+      Ocean_keeper_33: -2747761055301743824
+      Ocean_keeper_34: 1226875353199428064
+      Ocean_keeper_35: -1843575766492771682
+      Ocean_keeper_36: 3564864647473711515
+      Ocean_keeper_37: -9080752754248318290
+      Ocean_keeper_38: 1526131690087141931
+      Ocean_keeper_4: 2075255440294978138
+      Ocean_keeper_5: -6710289563228307534
+      Ocean_keeper_6: -2881292847608876589
+      Ocean_keeper_7: 2440823977207954913
+      Ocean_keeper_8: -265753307177826450
+      Ocean_keeper_9: -6370574465317780073
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

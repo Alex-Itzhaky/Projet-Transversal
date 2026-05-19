@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Inventory : MonoBehaviour
 {
     private int _reputationPoints = 0;
-    private TMP_Text _repPointsText;
+    [SerializeField] private TMP_Text _repPointsText;
 
     public void Start()
     {
