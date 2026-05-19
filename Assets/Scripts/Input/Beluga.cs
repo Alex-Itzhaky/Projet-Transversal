@@ -64,6 +64,7 @@ public class Beluga : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Boat") || other.gameObject.CompareTag("Hydrophone"))
         {
+            Debug.Log("RevealBeluga");
             _belugaSprite.DOFade(1, 1);
         }
         if (other.gameObject.CompareTag("Trash"))
@@ -84,6 +85,7 @@ public class Beluga : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Boat") || other.gameObject.CompareTag("Hydrophone"))
         {
+            Debug.Log("HideBeluga");
             _belugaSprite.DOFade(0, 1);
         }
     }

@@ -102,7 +102,6 @@ GameObject:
   - component: {fileID: 1928737973488624510}
   - component: {fileID: 1840486026986460424}
   - component: {fileID: 5421410637021497056}
-  - component: {fileID: 9091535759992892378}
   m_Layer: 0
   m_Name: TrashBoat
   m_TagString: Untagged
@@ -204,28 +203,6 @@ MonoBehaviour:
         m_CallState: 2
   _trashCollectDuration: 4
   _relay: {fileID: 5011833190280399677}
---- !u!95 &9091535759992892378
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1547065228360294411}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0834d55d631e4b14bb3b3e978f59085f, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &3033682218199500013
 GameObject:
   m_ObjectHideFlags: 0
@@ -306,6 +283,7 @@ GameObject:
   - component: {fileID: 4321158950748708219}
   - component: {fileID: 1385169820688475320}
   - component: {fileID: 8042560319973777293}
+  - component: {fileID: 306347836643001165}
   m_Layer: 0
   m_Name: Graphics
   m_TagString: Boat
@@ -354,7 +332,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a9e53a00f3dd23c458ce4f9f7670dc9b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -421,7 +399,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3272f32f8941df040a04b3162d02d7a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SelectBoatShader
-  _selectColor: {r: 0.12882164, g: 0.6150943, b: 0.24589425, a: 1}
+  _selectColor: {r: 1, g: 1, b: 1, a: 1}
+  _baseColor: {r: 0.6117647, g: 1, b: 0.8078432, a: 0}
   _selectOpacity: 0.5
   _selectTime: 0.2
   _selectAnimCurve:
@@ -472,3 +451,18 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &306347836643001165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3742023356734190666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e569e3dc993638342845fb4626042d97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BoatAnimations
+  _animator: {fileID: 1385169820688475320}
+  _rb: {fileID: 1840486026986460424}
+  _sprite: {fileID: 4321158950748708219}

@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: SelectBoatMAT
-  m_Shader: {fileID: -6465566751694194690, guid: 6058f02bb242a3e4a9ee9b56fe538a98, type: 3}
+  m_Name: OutlineTrashBoatMAT
+  m_Shader: {fileID: -6465566751694194690, guid: bfe1520ffb9582143841b430700ea300, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -18,8 +18,7 @@ Material:
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
-  disabledShaderPasses:
-  - MOTIONVECTORS
+  disabledShaderPasses: []
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
@@ -29,7 +28,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
+        m_Texture: {fileID: 2800000, guid: d1c415b62cc778a4e8b98067dc0614b6, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MaskTex:
@@ -55,20 +54,18 @@ Material:
     m_Ints: []
     m_Floats:
     - _EnableExternalAlpha: 0
-    - _OpacityAmount: 0.5
-    - _QueueControl: 0
-    - _QueueOffset: 0
-    - _SelectOpacity: 0
+    - _Thickness: 0.0036
     - _ZWrite: 0
     m_Colors:
     - White: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _FromColor: {r: 0.6117647, g: 1, b: 0.8078432, a: 1}
+    - _OutlineColor: {r: 1, g: 1, b: 1, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
-    - _ReplaceColor: {r: 0.28338903, g: 0.645283, b: 0.16923454, a: 0.52156866}
-    - _SelectColor: {r: 0.12472971, g: 0.5924529, b: 0.06595226, a: 1}
+    - _ToColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!114 &3946473862552148158
+--- !u!114 &5097034759917401791
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
