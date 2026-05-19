@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Rendering;
@@ -13,13 +14,14 @@ public class Boat : MonoBehaviour
     [SerializeField] protected BoxCollider2D _collider;
     [SerializeField] public Grid grid;
     [SerializeField] public Tilemap islandTilemap;
+    [SerializeField] public BoatLineRenderer boatLineRenderer;
     
 
     [Header("Variables")]
     [SerializeField] private float _moveSpeed;
     
     protected BoatState _currentBoatState;
-    protected Vector2 _targetPosition;
+    public Vector2 _targetPosition;
     protected bool _isBoatSelected = false;
     protected bool _canBoatMove = true;
 
@@ -34,7 +36,7 @@ public class Boat : MonoBehaviour
 
     private void Update()
     {
-        SetNewTargetPositionOnClick();//Important de garder cet ordre de priorité sinon on désélectionne le bateau avant de choisir la nouvelle destination
+        SetNewTargetPositionOnClick();//Important de garder cet ordre de prioritï¿½ sinon on dï¿½sï¿½lectionne le bateau avant de choisir la nouvelle destination
         SelectBoat();
         CheckGameOver();
         //Debug.Log($"{gameObject.name} State = {_currentBoatState}");
@@ -75,13 +77,13 @@ public class Boat : MonoBehaviour
         {
             _isBoatSelected = true;
             BoatIsSelected.Invoke();
-            Debug.Log($"Bateau Sélectionné : {_isBoatSelected}");
+            Debug.Log($"Bateau Sï¿½lectionnï¿½ : {_isBoatSelected}");
         }
         else
         {
             _isBoatSelected = false;
             BoatIsUnselected.Invoke();
-            Debug.Log($"Bateau Désélectionné : {_isBoatSelected}");
+            Debug.Log($"Bateau Dï¿½sï¿½lectionnï¿½ : {_isBoatSelected}");
         }
     }
 
@@ -107,10 +109,10 @@ public class Boat : MonoBehaviour
             _rb.linearVelocity = Vector2.zero;
             return;
         }
-            
         Vector2 dir = _targetPosition - (Vector2) transform.position;
         dir.Normalize();
         _rb.linearVelocity = dir * _moveSpeed;
+        boatLineRenderer.DrawLine();
     }
     private void CheckGameOver()
     {
