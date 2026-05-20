@@ -26,7 +26,7 @@ public class SortOrderManager : MonoBehaviour
         var spriteRenderers = FindObjectsByType<SpriteRenderer>(FindObjectsSortMode.None);
         foreach (SpriteRenderer sprite in spriteRenderers)
         {
-            if (!_spritesRegistry.Any(entry => entry.sprite == sprite))
+            if (!_spritesRegistry.Any(entry => entry.sprite == sprite) && ((1 << sprite.gameObject.layer) & _ignoredLayers) != 0)
                 _spritesRegistry.Add((sprite, 0f));
         }
         //foreach (var sprite in _spritesRegistry)
