@@ -21,6 +21,12 @@ public class Gameloop : MonoBehaviour
     private bool _canBelugaSpawn = true;
     private bool _canTrashSpawn = true;
 
+    [SerializeField] private AudioClip _musicClip;
+
+    private void Awake()
+    {
+        SoundFXManager.Instance.PlayMusicClip(_musicClip, transform);
+    }
     private IEnumerator Start()
     {
         _eventSpawner.SpawnTrashZone();

@@ -17,6 +17,8 @@ public class MainMenu : MonoBehaviour
 
     private void Start()
     {
+        if (_mainMenuMusic == null)
+            return;
         if (_isMainMenu)
             SoundFXManager.Instance.PlayMusicClip(_mainMenuMusic, Camera.main.transform);
     }

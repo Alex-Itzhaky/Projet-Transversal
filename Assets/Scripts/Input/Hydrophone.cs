@@ -1,6 +1,7 @@
 using System.Collections;
 using DG.Tweening;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Hydrophone : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class Hydrophone : MonoBehaviour
     private Color _neutral = new Color(255,255,255);
     private Color _belugaDetected = new Color(255,0,0);
     private Color _broken = new Color(0, 0, 0);
+
+    [SerializeField] private AudioClip _detectionSFX;
     
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -18,6 +21,7 @@ public class Hydrophone : MonoBehaviour
             if (!_isBroken)
             {
                 _spriteRenderer.color = _belugaDetected;
+                SoundFXManager.Instance.PlaySoundFXClip(_detectionSFX, transform);
             }
             else
             {

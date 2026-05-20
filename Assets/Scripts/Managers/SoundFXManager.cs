@@ -47,14 +47,9 @@ public class SoundFXManager : MonoBehaviour
 
         audioSource.clip = audioClip;
         audioSource.volume = volume;
+        audioSource.loop = looping;
 
         audioSource.Play();
-        
-        if (!looping)
-        {
-            float clipLength = audioSource.clip.length;
-            Destroy(audioSource.gameObject, clipLength);
-        }
     }
 
     public void FadeMusicOut(float duration)

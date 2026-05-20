@@ -4,10 +4,12 @@ using System.Collections;
 public class TrashBoat : Boat
 {
 
-    private GameObject _currentTrashZone;
+    private TrashZone _currentTrashZone;
     [SerializeField] private float _trashCollectDuration;
 
     [SerializeField] private TriggerRelay _relay;
+
+    [SerializeField] private AudioClip _cleanTrashSound;
 
     private void Awake()
     {
@@ -29,10 +31,17 @@ public class TrashBoat : Boat
         }
         Debug.Log("Lock trashZone fini, commence le nettoyage");
         yield return new WaitForSeconds(_trashCollectDuration);
+        Debug.Log("Nettoyage fini");
+        PlayCleanTrashSound();
         _currentBoatState = BoatState.Idle;
-        Destroy(_currentTrashZone);
+        Destroy(_currentTrashZone.gameObject);
         _canBoatMove = true;
 
+    }
+
+    private void PlayCleanTrashSound()
+    {
+        SoundFXManager.Instance.PlaySoundFXClip( _cleanTrashSound, transform);
     }
 
     private void OnTrashEnter(Collider2D collision)
@@ -42,7 +51,7 @@ public class TrashBoat : Boat
             if (collision.GetComponent<TrashZone>().isBelugaTrappedInside || _currentBoatState == BoatState.CollectingTrash)
                 return;
             _currentBoatState = BoatState.CollectingTrash;
-            _currentTrashZone = collision.gameObject;
+            _currentTrashZone = collision.gameObject.GetComponent<TrashZone>();
             StartCoroutine(CollectTrashCoroutine());
         }
     }

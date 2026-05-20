@@ -206,6 +206,7 @@ MonoBehaviour:
         m_CallState: 2
   _trashCollectDuration: 4
   _relay: {fileID: 5011833190280399677}
+  _cleanTrashSound: {fileID: 8300000, guid: e28e62084fd98ad4da04e1d2b3f2d02b, type: 3}
 --- !u!120 &1197401623351096451
 LineRenderer:
   serializedVersion: 3

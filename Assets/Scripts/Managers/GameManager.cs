@@ -14,7 +14,6 @@ public class GameManager : MonoBehaviour
     public UnityEvent GameOver;
 
     [SerializeField] private SceneAsset _gameOverUI;
-
     private void Awake()
     {
         if (Instance != null)
@@ -39,12 +38,6 @@ public class GameManager : MonoBehaviour
     private void OnSceneLoaded(Scene scene, LoadSceneMode loadSceneMode)
     {
         PauseManager.Instance.UnpauseGame();
-        if (scene.name == "ScenePrototype" && !isLoadedFromMainMenu)
-        {
-            Debug.LogWarning("Le jeu n'a pas été lancé depuis le menu principal. Redirection forcée vers la scène MainMenu...");
-            SceneManager.LoadScene("MainMenu");
-        }
-        isGameOverPlaying = false;
     }
 
     private void OnSceneUnloaded(Scene scene)

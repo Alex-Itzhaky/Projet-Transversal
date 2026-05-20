@@ -703,6 +703,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   _gameOverUI: {fileID: 0}
+  _gameMusic: {fileID: 8300000, guid: 03009f7eeb8cb5e449536c6669a647fe, type: 3}
 --- !u!1 &692370489
 GameObject:
   m_ObjectHideFlags: 0
