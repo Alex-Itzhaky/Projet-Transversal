@@ -27,16 +27,7 @@ public class MainMenu : MonoBehaviour
         OnPlay.Invoke();
         _isMainMenu = false;
     }
-
-    public void ResumeGame()
-    {
-        menuPanel.SetActive(false);
-    }
-
-    public void PauseGame()
-    {
-        menuPanel.SetActive(true);
-    }
+    
     
     public void RestartGame()
     {
@@ -54,13 +45,6 @@ public class MainMenu : MonoBehaviour
     {
         optionPanel.SetActive(false);
         menuPanel.SetActive(true);
-    }
-
-    public void LeaveGame()
-    {
-        //SceneManager.LoadScene("MainMenu");
-        OnLeave.Invoke();
-        _isMainMenu = true;
     }
 
     public void QuitGame()
