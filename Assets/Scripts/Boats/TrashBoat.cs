@@ -39,7 +39,7 @@ public class TrashBoat : Boat
     {
         if (collision.gameObject.CompareTag("Trash"))
         {
-            if (collision.GetComponent<TrashZone>().isBelugaTrappedInside)
+            if (collision.GetComponent<TrashZone>().isBelugaTrappedInside || _currentBoatState == BoatState.CollectingTrash)
                 return;
             _currentBoatState = BoatState.CollectingTrash;
             _currentTrashZone = collision.gameObject;

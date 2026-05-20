@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3739503183369414899}
   - component: {fileID: 7210075826823762954}
   m_Layer: 2
-  m_Name: TrashZone
+  m_Name: SmallTrashZone
   m_TagString: Trash
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -69,7 +69,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 2.5
+  m_Radius: 0.55
 --- !u!114 &3739503183369414899
 MonoBehaviour:
   m_ObjectHideFlags: 0

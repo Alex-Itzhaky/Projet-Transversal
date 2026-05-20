@@ -1,25 +1,16 @@
 fileFormatVersion: 2
-guid: 6d4132dd8ba856c43bbc732f787ae2b4
+guid: 0cf8213b703227a4698e474ff66ec215
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2958792084841370866
-    second: bateau-net_haut_0
+      213: 7998113432258254920
+    second: temp_belugaIdle_0
   - first:
-      213: 4827786995997882994
-    second: bateau-net_haut_1
+      213: -5825260232649031553
+    second: temp_belugaIdle_1
   - first:
-      213: -4814894136446941779
-    second: bateau-net_haut_2
-  - first:
-      213: 8785309410040981469
-    second: bateau-net_haut_3
-  - first:
-      213: -5220649197006410345
-    second: bateau-net_haut_4
-  - first:
-      213: 5600100179002769053
-    second: bateau-net_haut_5
+      213: -2817329679482648148
+    second: temp_belugaIdle_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -111,137 +102,84 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bateau-net_haut_0
+      name: temp_belugaIdle_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 32
-        height: 32
+        x: 3
+        y: 2
+        width: 23
+        height: 20
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e0beac2764240f6d0800000000000000
-      internalID: -2958792084841370866
+      spriteID: 84898037ac10ffe60800000000000000
+      internalID: 7998113432258254920
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bateau-net_haut_1
+      name: temp_belugaIdle_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
+        x: 35
+        y: 2
+        width: 23
+        height: 20
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 27a34b3b1bebff240800000000000000
-      internalID: 4827786995997882994
+      spriteID: f70ceb49ea4882fa0800000000000000
+      internalID: -5825260232649031553
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bateau-net_haut_2
+      name: temp_belugaIdle_2
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 32
+        x: 67
+        y: 2
+        width: 23
+        height: 19
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: da508f51b4f0e2db0800000000000000
-      internalID: -4814894136446941779
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bateau-net_haut_3
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dd7a363ac50bbe970800000000000000
-      internalID: 8785309410040981469
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bateau-net_haut_4
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 79d218b27378c87b0800000000000000
-      internalID: -5220649197006410345
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bateau-net_haut_5
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d9ebf04317d87bd40800000000000000
-      internalID: 5600100179002769053
+      spriteID: ca985475595d6e8d0800000000000000
+      internalID: -2817329679482648148
       vertices: []
       indices: 
       edges: []
@@ -250,7 +188,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 74d78aa1fd6bfac4c8adba9028476b97
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -258,16 +196,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      bateau-net_haut_0: -2958792084841370866
-      bateau-net_haut_1: 4827786995997882994
-      bateau-net_haut_2: -4814894136446941779
-      bateau-net_haut_3: 8785309410040981469
-      bateau-net_haut_4: -5220649197006410345
-      bateau-net_haut_5: 5600100179002769053
+      temp_belugaIdle_0: 7998113432258254920
+      temp_belugaIdle_1: -5825260232649031553
+      temp_belugaIdle_2: -2817329679482648148
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

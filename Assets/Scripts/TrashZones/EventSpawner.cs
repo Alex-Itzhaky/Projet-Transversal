@@ -2,12 +2,13 @@ using UnityEngine;
 
 public class EventSpawner : MonoBehaviour
 {
-    [SerializeField] private GameObject _trashPrefab;
+    [SerializeField] private GameObject[] _trashPrefabs = new GameObject[3];
     [SerializeField] private GameObject _belugaPrefab;
 
-    [Header("TrashZone Radius Settings")]
-    [SerializeField] private float _minTrashRadius;
-    [SerializeField] private float _maxTrashRadius;
+    [Header("TrashZone Size Settings")]
+    [SerializeField] private float _smallTrashZoneChance;
+    [SerializeField] private float _mediumTrashZoneChance;
+    [SerializeField] private float _largeTrashZoneChance;
 
     [Header("TrashSpawner Area Size")]
     [SerializeField] private float _areaWidth;
@@ -24,16 +25,23 @@ public class EventSpawner : MonoBehaviour
         return targetPosition;
     }
 
-    private float GetRandomRadius()
+    private GameObject GetRandomTrashSize()
     {
-        return Random.Range(_minTrashRadius, _maxTrashRadius);
+        float randTrash = Random.Range(0f, 1f);
+        if (randTrash < _smallTrashZoneChance)
+            return _trashPrefabs[0];
+        else if (randTrash < _smallTrashZoneChance + _mediumTrashZoneChance)
+            return _trashPrefabs[1];
+        else if (randTrash < _smallTrashZoneChance + _mediumTrashZoneChance + _largeTrashZoneChance)
+            return _trashPrefabs[2];
+        else
+            return _trashPrefabs[0];
     }
 
     public void SpawnTrashZone()
     {
-        GameObject trashZoneInstance = Instantiate(_trashPrefab);
+        GameObject trashZoneInstance = Instantiate(GetRandomTrashSize());
         trashZoneInstance.transform.position = GetRandomPosition();
-        trashZoneInstance.GetComponent<CircleCollider2D>().radius = GetRandomRadius();
     }
 
     public void SpawnBeluga()
