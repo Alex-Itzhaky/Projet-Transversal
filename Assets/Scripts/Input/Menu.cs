@@ -11,6 +11,16 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("EI-Main scene");
     }
 
+    public void ResumeGame()
+    {
+        menuPanel.SetActive(false);
+    }
+
+    public void PauseGame()
+    {
+        menuPanel.SetActive(true);
+    }
+    
     public void RestartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
@@ -26,6 +36,11 @@ public class MainMenu : MonoBehaviour
     {
         optionPanel.SetActive(false);
         menuPanel.SetActive(true);
+    }
+
+    public void LeaveGame()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void QuitGame()
