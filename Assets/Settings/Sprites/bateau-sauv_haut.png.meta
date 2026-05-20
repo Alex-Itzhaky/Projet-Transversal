@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: b48da6554f9f1fb429637d8bc165b9bb
+guid: 80a76bba76e50e345acfda85623be496
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2156050818340098490
-    second: beluga nage_0
+      213: 4879494682845214457
+    second: bateau-sauv_haut_0
   - first:
-      213: -7049721744537991602
-    second: beluga nage_1
+      213: -5754736914005790152
+    second: bateau-sauv_haut_1
   - first:
-      213: 3751497181493578705
-    second: beluga nage_2
+      213: -7217158977611932477
+    second: bateau-sauv_haut_2
   - first:
-      213: -2813856544392677662
-    second: beluga nage_3
+      213: -1907253913105288951
+    second: bateau-sauv_haut_3
   - first:
-      213: -5345138808861699964
-    second: beluga nage_4
+      213: 4674195200191131690
+    second: bateau-sauv_haut_4
   - first:
-      213: -2506916972832719618
-    second: beluga nage_5
+      213: -8397085784703011460
+    second: bateau-sauv_haut_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,7 +52,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -66,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -111,17 +111,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: beluga nage_0
+      name: bateau-sauv_haut_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 5
-        width: 32
-        height: 19
+        x: 7
+        y: 2
+        width: 18
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,20 +143,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ab11ad8cbc4dbed10800000000000000
-      internalID: 2156050818340098490
+      spriteID: 9f67566bf8277b340800000000000000
+      internalID: 4879494682845214457
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: beluga nage_1
+      name: bateau-sauv_haut_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 5
-        width: 33
-        height: 18
+        x: 39
+        y: 2
+        width: 18
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +165,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e464773ac6b5a2e90800000000000000
-      internalID: -7049721744537991602
+      spriteID: 8327bd044411320b0800000000000000
+      internalID: -5754736914005790152
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: beluga nage_2
+      name: bateau-sauv_haut_2
       rect:
         serializedVersion: 2
-        x: 64
-        y: 5
-        width: 33
-        height: 21
+        x: 71
+        y: 2
+        width: 18
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1dbcdce6fceff0430800000000000000
-      internalID: 3751497181493578705
+      spriteID: 3cc5be3e52087db90800000000000000
+      internalID: -7217158977611932477
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: beluga nage_3
+      name: bateau-sauv_haut_3
       rect:
         serializedVersion: 2
-        x: 96
-        y: 5
-        width: 33
-        height: 21
+        x: 103
+        y: 2
+        width: 18
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,20 +209,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2e6f09e916c23f8d0800000000000000
-      internalID: -2813856544392677662
+      spriteID: 901b2eccba21885e0800000000000000
+      internalID: -1907253913105288951
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: beluga nage_4
+      name: bateau-sauv_haut_4
       rect:
         serializedVersion: 2
-        x: 128
-        y: 5
-        width: 33
-        height: 21
+        x: 135
+        y: 2
+        width: 18
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,20 +231,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 480d4a6b29042d5b0800000000000000
-      internalID: -5345138808861699964
+      spriteID: a207a3605c31ed040800000000000000
+      internalID: 4674195200191131690
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: beluga nage_5
+      name: bateau-sauv_haut_5
       rect:
         serializedVersion: 2
-        x: 160
-        y: 5
-        width: 32
-        height: 18
+        x: 167
+        y: 2
+        width: 18
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -240,8 +253,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: efc78e0ab44a53dd0800000000000000
-      internalID: -2506916972832719618
+      spriteID: c757b4ee7fe877b80800000000000000
+      internalID: -8397085784703011460
       vertices: []
       indices: 
       edges: []
@@ -260,12 +273,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      beluga nage_0: 2156050818340098490
-      beluga nage_1: -7049721744537991602
-      beluga nage_2: 3751497181493578705
-      beluga nage_3: -2813856544392677662
-      beluga nage_4: -5345138808861699964
-      beluga nage_5: -2506916972832719618
+      bateau-sauv_haut_0: 4879494682845214457
+      bateau-sauv_haut_1: -5754736914005790152
+      bateau-sauv_haut_2: -7217158977611932477
+      bateau-sauv_haut_3: -1907253913105288951
+      bateau-sauv_haut_4: 4674195200191131690
+      bateau-sauv_haut_5: -8397085784703011460
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

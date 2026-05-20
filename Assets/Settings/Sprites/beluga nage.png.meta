@@ -1,10 +1,25 @@
 fileFormatVersion: 2
-guid: 95e01f3d1ca7a824da58722602bc64bc
+guid: b48da6554f9f1fb429637d8bc165b9bb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2198780734059964546
-    second: Temp_tilemap_0
+      213: 2156050818340098490
+    second: beluga nage_0
+  - first:
+      213: -7049721744537991602
+    second: beluga nage_1
+  - first:
+      213: 3751497181493578705
+    second: beluga nage_2
+  - first:
+      213: -2813856544392677662
+    second: beluga nage_3
+  - first:
+      213: -5345138808861699964
+    second: beluga nage_4
+  - first:
+      213: -2506916972832719618
+    second: beluga nage_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +52,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -96,159 +111,150 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Temp_tilemap_0
+      name: beluga nage_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 16
-        height: 16
+        y: 5
+        width: 32
+        height: 19
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e77126f629c5c71e0800000000000000
-      internalID: -2198780734059964546
+      spriteID: ab11ad8cbc4dbed10800000000000000
+      internalID: 2156050818340098490
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Temp_tilemap_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3d569e4575a420b4387eb1d1e79e363c
-      internalID: -1277966343
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Temp_tilemap_2
+      name: beluga nage_1
       rect:
         serializedVersion: 2
         x: 32
-        y: 0
-        width: 16
-        height: 16
+        y: 5
+        width: 33
+        height: 18
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 68cbee1a97199524481a3a35fd608775
-      internalID: 1324957788
+      spriteID: e464773ac6b5a2e90800000000000000
+      internalID: -7049721744537991602
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Temp_tilemap_3
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f7bedb4706599884b9a9e472651a0c5c
-      internalID: 646633258
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Temp_tilemap_4
+      name: beluga nage_2
       rect:
         serializedVersion: 2
         x: 64
-        y: 0
-        width: 16
-        height: 16
+        y: 5
+        width: 33
+        height: 21
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: a9d9abae0c84bf44a99b8928e9164005
-      internalID: -159930066
+      spriteID: 1dbcdce6fceff0430800000000000000
+      internalID: 3751497181493578705
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Temp_tilemap_5
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 139e8d774b3798d439548cafbb452cc5
-      internalID: -741744939
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Temp_tilemap_6
+      name: beluga nage_3
       rect:
         serializedVersion: 2
         x: 96
-        y: 0
-        width: 16
-        height: 16
+        y: 5
+        width: 33
+        height: 21
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: a6f186714b029fa49999716e17f43f48
-      internalID: 551902826
+      spriteID: 2e6f09e916c23f8d0800000000000000
+      internalID: -2813856544392677662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beluga nage_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 5
+        width: 33
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 480d4a6b29042d5b0800000000000000
+      internalID: -5345138808861699964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beluga nage_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 5
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efc78e0ab44a53dd0800000000000000
+      internalID: -2506916972832719618
       vertices: []
       indices: 
       edges: []
@@ -257,7 +263,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: f7b45561ac7bbd14496376af5cfda7da
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -265,17 +271,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":16.0,"y":16.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      Temp_tilemap_0: -2198780734059964546
-      Temp_tilemap_1: -1277966343
-      Temp_tilemap_2: 1324957788
-      Temp_tilemap_3: 646633258
-      Temp_tilemap_4: -159930066
-      Temp_tilemap_5: -741744939
-      Temp_tilemap_6: 551902826
+      beluga nage_0: 2156050818340098490
+      beluga nage_1: -7049721744537991602
+      beluga nage_2: 3751497181493578705
+      beluga nage_3: -2813856544392677662
+      beluga nage_4: -5345138808861699964
+      beluga nage_5: -2506916972832719618
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
