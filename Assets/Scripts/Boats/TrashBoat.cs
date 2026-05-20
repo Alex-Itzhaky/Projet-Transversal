@@ -6,6 +6,7 @@ public class TrashBoat : Boat
 
     private GameObject _currentTrashZone;
     [SerializeField] private float _trashCollectDuration;
+    public Inventory inventory;
 
     [SerializeField] private TriggerRelay _relay;
 
@@ -31,6 +32,7 @@ public class TrashBoat : Boat
         yield return new WaitForSeconds(_trashCollectDuration);
         _currentBoatState = BoatState.Idle;
         Destroy(_currentTrashZone);
+        inventory.AddPoints(50);
         _canBoatMove = true;
 
     }

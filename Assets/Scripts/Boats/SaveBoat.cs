@@ -7,6 +7,7 @@ public class SaveBoat : Boat
     [SerializeField] private float _timeToHeal;
     public bool isSavingBeluga;
     private Beluga _currentBeluga;
+    public Inventory inventory;
 
     [SerializeField] private TriggerRelay _relay;
 
@@ -52,6 +53,7 @@ public class SaveBoat : Boat
         _currentTrashZone.currentBelugaTrapped = null;
         _currentTrashZone.isBelugaTrappedInside = false;
         _canBoatMove = true;
+        inventory.AddPoints(100);
     }
 }
 

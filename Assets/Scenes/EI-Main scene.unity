@@ -312,6 +312,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1169222346}
     - target: {fileID: 5421410637021497056, guid: 9cfc724492f77ec4990637c04ee3ef56, type: 3}
+      propertyPath: inventory
+      value: 
+      objectReference: {fileID: 473458705}
+    - target: {fileID: 5421410637021497056, guid: 9cfc724492f77ec4990637c04ee3ef56, type: 3}
       propertyPath: lineRenderer
       value: 
       objectReference: {fileID: 1850677712}
@@ -5302,6 +5306,10 @@ PrefabInstance:
       propertyPath: grid
       value: 
       objectReference: {fileID: 1169222346}
+    - target: {fileID: 5317164386192599988, guid: ef67b1531e1cebe47bc59ce0d77afb62, type: 3}
+      propertyPath: inventory
+      value: 
+      objectReference: {fileID: 473458705}
     - target: {fileID: 5317164386192599988, guid: ef67b1531e1cebe47bc59ce0d77afb62, type: 3}
       propertyPath: lineRenderer
       value: 
