@@ -47,13 +47,7 @@ public class Gameloop : MonoBehaviour
         _canBelugaSpawn = true;
         _eventSpawner.SpawnBeluga();
     }
-
-    private void SpawnBeluga()
-    {
-        //Incomplet tant que j'ai pas les prefabs ou zones de spawn mais rapide à faire
-        //Même logique que pour les spawns de déchets
-    }
-
+    
     private IEnumerator TrashSpawnTimer(float time)
     {
         _canTrashSpawn = false;

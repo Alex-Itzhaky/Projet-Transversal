@@ -9,6 +9,7 @@ public class Beluga : MonoBehaviour
 
     [SerializeField] private Rigidbody2D _rigidbody2D;
     [SerializeField] private SpriteRenderer _belugaSprite;
+    [SerializeField] private Animator _animator;
     private float _moveSpeed = 2.5f;
     private float _waitingTimer = 0f;
     private bool _isBelugaMoving = false;
@@ -39,6 +40,18 @@ public class Beluga : MonoBehaviour
         BelugaMove();
     }
     
+    private IEnumerator ApparitionCoroutine()
+    {
+        _animator.Play("apparition");
+        yield return new WaitForSeconds(3);
+        _belugaSprite.DOFade(0, 1);
+    }
+
+    public void Start()
+    {
+        ApparitionCoroutine();
+    }
+
     private void Update()
     {
         _waitingTimer += Time.deltaTime;
