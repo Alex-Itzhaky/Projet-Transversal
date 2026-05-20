@@ -11,9 +11,10 @@ public class Boat : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] protected Rigidbody2D _rb;
-    [SerializeField] protected BoxCollider2D _collider;
+    [SerializeField] protected CircleCollider2D _collider;
     [SerializeField] public Grid grid;
     [SerializeField] public Tilemap islandTilemap;
+    [SerializeField] public GameObject _gameOverScreen;
     
 
     [Header("Variables")]
@@ -57,9 +58,11 @@ public class Boat : MonoBehaviour
         {
             //Trigger game over
             Debug.Log("Game Over");
+            Time.timeScale = 0f;
+            _gameOverScreen.SetActive(true);
             
 #if UNITY_EDITOR
-            EditorApplication.ExitPlaymode();
+            //EditorApplication.ExitPlaymode();
 #endif
         }
     }

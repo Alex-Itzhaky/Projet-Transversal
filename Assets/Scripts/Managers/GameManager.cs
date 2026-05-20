@@ -13,7 +13,8 @@ public class GameManager : MonoBehaviour
     public bool isGameOverPlaying { get; private set; } = false;
     public UnityEvent GameOver;
 
-    [SerializeField] private SceneAsset _gameOverUI;
+    [SerializeField] private GameObject _gameOverScreen;
+
     private void Awake()
     {
         if (Instance != null)
@@ -38,6 +39,12 @@ public class GameManager : MonoBehaviour
     private void OnSceneLoaded(Scene scene, LoadSceneMode loadSceneMode)
     {
         PauseManager.Instance.UnpauseGame();
+        if (scene.name == "ScenePrototype" && !isLoadedFromMainMenu)
+        {
+            Debug.LogWarning("Le jeu n'a pas �t� lanc� depuis le menu principal. Redirection forc�e vers la sc�ne MainMenu...");
+            SceneManager.LoadScene("MainMenu");
+        }
+        isGameOverPlaying = false;
     }
 
     private void OnSceneUnloaded(Scene scene)
@@ -58,7 +65,7 @@ public class GameManager : MonoBehaviour
 
         yield return new WaitForSecondsRealtime(2);
         PauseManager.Instance.PauseGame();
-        yield return SceneManager.LoadSceneAsync(_gameOverUI.name, LoadSceneMode.Additive);
+        _gameOverScreen.SetActive(true);
 
     }
 }
