@@ -1,25 +1,31 @@
 fileFormatVersion: 2
-guid: b48da6554f9f1fb429637d8bc165b9bb
+guid: d1279f7d1755fdd48b4604a647d9dca1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2156050818340098490
-    second: beluga nage_0
+      213: -2661479912954814369
+    second: apparition_beluga_0
   - first:
-      213: -7049721744537991602
-    second: beluga nage_1
+      213: -3155512454802251176
+    second: apparition_beluga_1
   - first:
-      213: 3751497181493578705
-    second: beluga nage_2
+      213: -2953823539061082876
+    second: apparition_beluga_2
   - first:
-      213: -2813856544392677662
-    second: beluga nage_3
+      213: 2035137960275549564
+    second: apparition_beluga_3
   - first:
-      213: -5345138808861699964
-    second: beluga nage_4
+      213: -4699918942695941613
+    second: apparition_beluga_4
   - first:
-      213: -2506916972832719618
-    second: beluga nage_5
+      213: -563364013181916908
+    second: apparition_beluga_5
+  - first:
+      213: -7715592103369774943
+    second: apparition_beluga_6
+  - first:
+      213: -6937527446694887745
+    second: apparition_beluga_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -111,30 +117,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: beluga nage_0
+      name: apparition_beluga_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 5
-        width: 32
-        height: 19
+        x: 2
+        y: 6
+        width: 28
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,19 +136,85 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ab11ad8cbc4dbed10800000000000000
-      internalID: 2156050818340098490
+      spriteID: f50ad7bce16801bd0800000000000000
+      internalID: -2661479912954814369
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: beluga nage_1
+      name: apparition_beluga_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 5
-        width: 33
+        x: 34
+        y: 6
+        width: 28
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 852e037142e5534d0800000000000000
+      internalID: -3155512454802251176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: apparition_beluga_2
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 6
+        width: 28
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 405b3192429e107d0800000000000000
+      internalID: -2953823539061082876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: apparition_beluga_3
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 6
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7d132731334e3c10800000000000000
+      internalID: 2035137960275549564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: apparition_beluga_4
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 6
+        width: 28
         height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -165,19 +224,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e464773ac6b5a2e90800000000000000
-      internalID: -7049721744537991602
+      spriteID: 31a9a737f9886ceb0800000000000000
+      internalID: -4699918942695941613
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: beluga nage_2
+      name: apparition_beluga_5
       rect:
         serializedVersion: 2
-        x: 64
-        y: 5
-        width: 33
+        x: 161
+        y: 6
+        width: 29
         height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -187,20 +246,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1dbcdce6fceff0430800000000000000
-      internalID: 3751497181493578705
+      spriteID: 419ad033a678e28f0800000000000000
+      internalID: -563364013181916908
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: beluga nage_3
+      name: apparition_beluga_6
       rect:
         serializedVersion: 2
-        x: 96
-        y: 5
-        width: 33
-        height: 21
+        x: 193
+        y: 6
+        width: 29
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,41 +268,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2e6f09e916c23f8d0800000000000000
-      internalID: -2813856544392677662
+      spriteID: 1a8e5d66cd5bce490800000000000000
+      internalID: -7715592103369774943
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: beluga nage_4
+      name: apparition_beluga_7
       rect:
         serializedVersion: 2
-        x: 128
-        y: 5
-        width: 33
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 480d4a6b29042d5b0800000000000000
-      internalID: -5345138808861699964
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: beluga nage_5
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 5
-        width: 32
+        x: 225
+        y: 6
+        width: 29
         height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -253,8 +290,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: efc78e0ab44a53dd0800000000000000
-      internalID: -2506916972832719618
+      spriteID: fbe7a383b83f8bf90800000000000000
+      internalID: -6937527446694887745
       vertices: []
       indices: 
       edges: []
@@ -273,12 +310,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      beluga nage_0: 2156050818340098490
-      beluga nage_1: -7049721744537991602
-      beluga nage_2: 3751497181493578705
-      beluga nage_3: -2813856544392677662
-      beluga nage_4: -5345138808861699964
-      beluga nage_5: -2506916972832719618
+      apparition_beluga_0: -2661479912954814369
+      apparition_beluga_1: -3155512454802251176
+      apparition_beluga_2: -2953823539061082876
+      apparition_beluga_3: 2035137960275549564
+      apparition_beluga_4: -4699918942695941613
+      apparition_beluga_5: -563364013181916908
+      apparition_beluga_6: -7715592103369774943
+      apparition_beluga_7: -6937527446694887745
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
