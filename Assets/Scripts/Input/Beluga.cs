@@ -39,17 +39,10 @@ public class Beluga : MonoBehaviour
         yield return new WaitForSeconds(3);
         BelugaMove();
     }
-    
-    private IEnumerator ApparitionCoroutine()
-    {
-        _animator.Play("apparition");
-        yield return new WaitForSeconds(3);
-        _belugaSprite.DOFade(0, 1);
-    }
 
     public void Start()
     {
-        ApparitionCoroutine();
+        _belugaSprite.DOFade(0, 1);
     }
 
     private void Update()
@@ -75,7 +68,7 @@ public class Beluga : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Boat") || other.gameObject.CompareTag("Hydrophone"))
+        if (other.gameObject.CompareTag("Boat") || other.gameObject.CompareTag("Hydrophone") || other.gameObject.CompareTag("Trash"))
         {
             Debug.Log("RevealBeluga");
             _belugaSprite.DOFade(1, 1);

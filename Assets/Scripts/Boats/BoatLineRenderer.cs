@@ -15,7 +15,7 @@ public class BoatLineRenderer : MonoBehaviour
     {
         _lineRenderer.SetPosition(0, transform.position);
         _lineRenderer.SetPosition(1, _boat._targetPosition);
-        _lineRenderer.startWidth = 0.25f;
-        _lineRenderer.endWidth = 0.25f;
+        _lineRenderer.startWidth = 0.5f;
+        _lineRenderer.endWidth = 0.5f;
     }
 }
