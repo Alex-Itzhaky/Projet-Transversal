@@ -49,6 +49,8 @@ public class SaveBoat : Boat
         yield return new WaitForSeconds(_timeToHeal);
         _currentBeluga.HealBeluga();
         _currentBoatState = BoatState.Idle;
+        _currentTrashZone.currentBelugaTrapped = null;
+        _currentTrashZone.isBelugaTrappedInside = false;
         _canBoatMove = true;
     }
 }

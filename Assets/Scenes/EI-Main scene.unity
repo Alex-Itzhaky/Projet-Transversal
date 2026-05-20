@@ -259,10 +259,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1197401623351096451, guid: 9cfc724492f77ec4990637c04ee3ef56, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 1547065228360294411, guid: 9cfc724492f77ec4990637c04ee3ef56, type: 3}
       propertyPath: m_Name
       value: TrashBoat
@@ -849,7 +845,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Inventory
   _repPointsText: {fileID: 1820431180}
-  _gameOverScreenText: {fileID: 0}
+  _gameOverScreenText: {fileID: 1582779009}
 --- !u!114 &473458706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6231,7 +6227,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 02220a2dddd4f52458aaf148b811f473, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
