@@ -1,14 +1,31 @@
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
     public GameObject menuPanel;
     public GameObject optionPanel;
-    
+
+    [SerializeField] private AudioClip _mainMenuMusic;
+
+    public UnityEvent OnPlay;
+    public UnityEvent OnRestart;
+    public UnityEvent OnLeave;
+
+    private static bool _isMainMenu = true;
+
+    private void Start()
+    {
+        if (_isMainMenu)
+            SoundFXManager.Instance.PlayMusicClip(_mainMenuMusic, Camera.main.transform);
+    }
+
     public void PlayGame()
     {
-        SceneManager.LoadScene("EI-Main scene");
+        //SceneManager.LoadScene("EI-Main scene");
+        OnPlay.Invoke();
+        _isMainMenu = false;
     }
 
     public void ResumeGame()
@@ -23,7 +40,8 @@ public class MainMenu : MonoBehaviour
     
     public void RestartGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        OnRestart.Invoke();
     }
 
     public void GoToOption()
@@ -40,7 +58,9 @@ public class MainMenu : MonoBehaviour
 
     public void LeaveGame()
     {
-        SceneManager.LoadScene("MainMenu");
+        //SceneManager.LoadScene("MainMenu");
+        OnLeave.Invoke();
+        _isMainMenu = true;
     }
 
     public void QuitGame()

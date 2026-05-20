@@ -754,10 +754,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6829def7ef538b74ea01cd9dbf95ba55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TrashSpawner
-  _trashPrefab: {fileID: 5635447442449653550, guid: 6ed314ec77006644f953409919e1dc37, type: 3}
+  _trashPrefabs:
+  - {fileID: 5635447442449653550, guid: 6ed314ec77006644f953409919e1dc37, type: 3}
+  - {fileID: 6494813968478806381, guid: 7df1db5cee29b4041a3ad0516da4e5fe, type: 3}
+  - {fileID: 5949419283613123028, guid: 8f9694379cdbc7649b9cdfc798fca3b3, type: 3}
   _belugaPrefab: {fileID: 7674022743256059370, guid: 8d1b8069b646edf45b597a63e50e5f81, type: 3}
-  _minTrashRadius: 1
-  _maxTrashRadius: 3
+  _smallTrashZoneChance: 0.5
+  _mediumTrashZoneChance: 0.33333334
+  _largeTrashZoneChance: 0.16666667
   _areaWidth: 14
   _areaHeight: 10
 --- !u!4 &400528480
@@ -946,6 +950,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MainMenu
   menuPanel: {fileID: 2061152111}
   optionPanel: {fileID: 929104176}
+  OnPlay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnRestart:
+    m_PersistentCalls:
+      m_Calls: []
+  OnLeave:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &474221676
 GameObject:
   m_ObjectHideFlags: 0
