@@ -845,7 +845,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Inventory
   _repPointsText: {fileID: 1820431180}
-  _gameOverScreenText: {fileID: 0}
+  _gameOverScreenText: {fileID: 1582779009}
 --- !u!114 &473458706
 MonoBehaviour:
   m_ObjectHideFlags: 0
