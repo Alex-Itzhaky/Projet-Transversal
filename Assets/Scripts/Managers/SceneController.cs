@@ -21,8 +21,10 @@ public class SceneController : MonoBehaviour
 
     private IEnumerator LoadSceneCoroutine(string sceneName)
     {
+        SoundFXManager.Instance.FadeMusicOut(_sceneFadeDuration);
         yield return _sceneFade.FadeOutCoroutine(_sceneFadeDuration);
         yield return SceneManager.LoadSceneAsync(sceneName);
         PauseManager.Instance.UnpauseGame();
+        SoundFXManager.Instance.FadeMusicIn(_sceneFadeDuration);
     }
 }
