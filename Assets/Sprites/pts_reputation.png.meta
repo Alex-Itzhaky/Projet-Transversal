@@ -1,2 +1,676 @@
 fileFormatVersion: 2
-guid: 666d90496ff1bd4419c4595f5e603494
+guid: b33c038ecc57e284e8a7469aaac0f588
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -624457837528399684
+    second: pts_reputation_0
+  - first:
+      213: 4394021213951072698
+    second: pts_reputation_1
+  - first:
+      213: 6012528656534444944
+    second: pts_reputation_2
+  - first:
+      213: 7305575387927608961
+    second: pts_reputation_3
+  - first:
+      213: -4272572746388571591
+    second: pts_reputation_4
+  - first:
+      213: 9011125423743454731
+    second: pts_reputation_5
+  - first:
+      213: -3263850636019785873
+    second: pts_reputation_6
+  - first:
+      213: 7012405263312422744
+    second: pts_reputation_7
+  - first:
+      213: -5668449497748682764
+    second: pts_reputation_8
+  - first:
+      213: 4943568082052540305
+    second: pts_reputation_9
+  - first:
+      213: 3097331977131234972
+    second: pts_reputation_10
+  - first:
+      213: -4271200798065956350
+    second: pts_reputation_11
+  - first:
+      213: 5779580347785503915
+    second: pts_reputation_12
+  - first:
+      213: -8501064850593119388
+    second: pts_reputation_13
+  - first:
+      213: -8212615579941804429
+    second: pts_reputation_14
+  - first:
+      213: 5508416816441090294
+    second: pts_reputation_15
+  - first:
+      213: 4484725114453794497
+    second: pts_reputation_16
+  - first:
+      213: -7563328338503123732
+    second: pts_reputation_17
+  - first:
+      213: 3126356467013675784
+    second: pts_reputation_18
+  - first:
+      213: 7449868589737888042
+    second: pts_reputation_19
+  - first:
+      213: -2385883392847332970
+    second: pts_reputation_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pts_reputation_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 21
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb049e0c7ea7557f0800000000000000
+      internalID: -624457837528399684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pts_reputation_1
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 8
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab995197303bafc30800000000000000
+      internalID: 4394021213951072698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pts_reputation_2
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 8
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09b979615fac07350800000000000000
+      internalID: 6012528656534444944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pts_reputation_3
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 8
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18ef245db1e926560800000000000000
+      internalID: 7305575387927608961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pts_reputation_4
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 8
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93a7e7669b5c4b4c0800000000000000
+      internalID: -4272572746388571591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pts_reputation_5
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 8
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0e48b474d2fd0d70800000000000000
+      internalID: 9011125423743454731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pts_reputation_6
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 8
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6f9b10a32974b2d0800000000000000
+      internalID: -3263850636019785873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pts_reputation_7
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 8
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85701d40f61115160800000000000000
+      internalID: 7012405263312422744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pts_reputation_8
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 8
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f7c27be63f9551b0800000000000000
+      internalID: -5668449497748682764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pts_reputation_9
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 8
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19763bd7af41b9440800000000000000
+      internalID: 4943568082052540305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pts_reputation_10
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 8
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c969d58d50febfa20800000000000000
+      internalID: 3097331977131234972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pts_reputation_11
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 8
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20ae9e20185a9b4c0800000000000000
+      internalID: -4271200798065956350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pts_reputation_12
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 8
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba4659c64b1353050800000000000000
+      internalID: 5779580347785503915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pts_reputation_13
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 9
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46386d71f86260a80800000000000000
+      internalID: -8501064850593119388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pts_reputation_14
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 7
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 376eab074ade60e80800000000000000
+      internalID: -8212615579941804429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pts_reputation_15
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 9
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f062c2e8e3d17c40800000000000000
+      internalID: 5508416816441090294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pts_reputation_16
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 8
+        width: 8
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ce9a420bb1fc3e30800000000000000
+      internalID: 4484725114453794497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pts_reputation_17
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 8
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cec30e7c2f8a90790800000000000000
+      internalID: -7563328338503123732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pts_reputation_18
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 8
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80b689184ac036b20800000000000000
+      internalID: 3126356467013675784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pts_reputation_19
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 28
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a29caa2e200436760800000000000000
+      internalID: 7449868589737888042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pts_reputation_20
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 12
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 699b4d5f1b3a3eed0800000000000000
+      internalID: -2385883392847332970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      pts_reputation_0: -624457837528399684
+      pts_reputation_1: 4394021213951072698
+      pts_reputation_10: 3097331977131234972
+      pts_reputation_11: -4271200798065956350
+      pts_reputation_12: 5779580347785503915
+      pts_reputation_13: -8501064850593119388
+      pts_reputation_14: -8212615579941804429
+      pts_reputation_15: 5508416816441090294
+      pts_reputation_16: 4484725114453794497
+      pts_reputation_17: -7563328338503123732
+      pts_reputation_18: 3126356467013675784
+      pts_reputation_19: 7449868589737888042
+      pts_reputation_2: 6012528656534444944
+      pts_reputation_20: -2385883392847332970
+      pts_reputation_3: 7305575387927608961
+      pts_reputation_4: -4272572746388571591
+      pts_reputation_5: 9011125423743454731
+      pts_reputation_6: -3263850636019785873
+      pts_reputation_7: 7012405263312422744
+      pts_reputation_8: -5668449497748682764
+      pts_reputation_9: 4943568082052540305
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
