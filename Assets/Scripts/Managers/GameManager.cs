@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public UnityEvent GameOver;
 
     [SerializeField] private GameObject _gameOverScreen;
+    [SerializeField] private AudioClip _gameOverSFX;
 
     private void Awake()
     {
@@ -45,6 +46,7 @@ public class GameManager : MonoBehaviour
             SceneManager.LoadScene("MainMenu");
         }
         isGameOverPlaying = false;
+        SoundFXManager.Instance.UnmuteMusic();
     }
 
     private void OnSceneUnloaded(Scene scene)
@@ -62,7 +64,8 @@ public class GameManager : MonoBehaviour
     private IEnumerator PlayerDeathCoroutine()
     {
         isGameOverPlaying = true;
-
+        SoundFXManager.Instance.MuteMusic();
+        SoundFXManager.Instance.PlaySoundFXClip(_gameOverSFX, transform);
         yield return new WaitForSecondsRealtime(2);
         PauseManager.Instance.PauseGame();
         _gameOverScreen.SetActive(true);

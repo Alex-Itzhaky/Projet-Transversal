@@ -10,6 +10,8 @@ public class TrashBoat : Boat
 
     [SerializeField] private TriggerRelay _relay;
 
+    [SerializeField] private AudioClip _trashCleanSFX;
+
     private void Awake()
     {
         _relay.OnTriggered += OnTrashEnter;
@@ -33,6 +35,7 @@ public class TrashBoat : Boat
         _currentBoatState = BoatState.Idle;
         Destroy(_currentTrashZone);
         inventory.AddPoints(50);
+        SoundFXManager.Instance.PlaySoundFXClip(_trashCleanSFX, transform);
         _canBoatMove = true;
 
     }

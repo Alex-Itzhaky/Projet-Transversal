@@ -162,6 +162,7 @@ MonoBehaviour:
   _collider: {fileID: 6602043530977515869}
   grid: {fileID: 0}
   islandTilemap: {fileID: 0}
+  _gameOverScreen: {fileID: 0}
   _moveSpeed: 3
   _targetPosition: {x: 0, y: 0}
   BoatIsSelected:
@@ -197,7 +198,7 @@ MonoBehaviour:
   _trashCollectDuration: 4
   inventory: {fileID: 0}
   _relay: {fileID: 5011833190280399677}
-  _cleanTrashSound: {fileID: 8300000, guid: e28e62084fd98ad4da04e1d2b3f2d02b, type: 3}
+  _trashCleanSFX: {fileID: 8300000, guid: e28e62084fd98ad4da04e1d2b3f2d02b, type: 3}
 --- !u!120 &1197401623351096451
 LineRenderer:
   serializedVersion: 3

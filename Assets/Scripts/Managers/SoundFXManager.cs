@@ -1,4 +1,5 @@
 using DG.Tweening;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Audio;
 
@@ -9,6 +10,9 @@ public class SoundFXManager : MonoBehaviour
     [SerializeField] private AudioSource _soundFXObject;
     [SerializeField] private AudioSource _musicObject;
     [SerializeField] private AudioMixer _audioMixer;
+
+    private float _previousMusicVolume;
+    private bool _isMusicMuted;
 
     private void Awake()
     {
@@ -52,14 +56,30 @@ public class SoundFXManager : MonoBehaviour
         audioSource.Play();
     }
 
-    public void FadeMusicOut(float duration)
+    public IEnumerator FadeMusicOut(float duration)
     {
-        _audioMixer.DOSetFloat("musicVolume", -80f, duration).SetEase(Ease.OutQuint).SetUpdate(true);
+        //_audioMixer.DOSetFloat("musicVolume", -80f, duration).SetEase(Ease.OutQuint).SetUpdate(true);
+        _audioMixer.GetFloat("musicVolume", out _previousMusicVolume);
+        float elapsedTime = 0f;
+        while (elapsedTime < duration)
+        {
+            _audioMixer.SetFloat("musicVolume", Mathf.Lerp(_previousMusicVolume, -80f, elapsedTime / duration));
+            elapsedTime += Time.unscaledDeltaTime;
+            yield return null;
+        }
     }
 
-    public void FadeMusicIn(float duration)
+    public IEnumerator FadeMusicIn(float duration)
     {
-        _audioMixer.DOSetFloat("musicVolume", 0f, duration).SetEase(Ease.OutQuint).SetUpdate(true);
+        //_audioMixer.DOSetFloat("musicVolume", 0f, duration).SetEase(Ease.OutQuint).SetUpdate(true);
+        _audioMixer.GetFloat("musicVolume", out _previousMusicVolume);
+        float elapsedTime = 0f;
+        while (elapsedTime < duration)
+        {
+            _audioMixer.SetFloat("musicVolume", Mathf.Lerp(_previousMusicVolume, 0f, elapsedTime / duration));
+            elapsedTime += Time.unscaledDeltaTime;
+            yield return null;
+        }
     }
 
     public void SetMasterVolume(float volume)
@@ -90,5 +110,23 @@ public class SoundFXManager : MonoBehaviour
             return;
         }
         _audioMixer.SetFloat("musicVolume", Mathf.Log10(volume) * 20f);
+    }
+
+    public void MuteMusic()
+    {
+        if (!_isMusicMuted)
+        {
+            _audioMixer.GetFloat("musicVolume", out _previousMusicVolume);
+            _audioMixer.SetFloat("musicVolume", -80f);
+            _isMusicMuted = true;
+        }
+    }
+
+    public void UnmuteMusic()
+    {
+        if (!_isMusicMuted)
+            return;
+        _audioMixer.SetFloat("musicVolume", _previousMusicVolume);
+        _isMusicMuted = false;
     }
 }
