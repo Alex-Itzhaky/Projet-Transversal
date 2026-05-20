@@ -342,7 +342,7 @@ GameObject:
   - component: {fileID: 4567955646375937422}
   m_Layer: 2
   m_Name: Triggers
-  m_TagString: Untagged
+  m_TagString: Boat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
