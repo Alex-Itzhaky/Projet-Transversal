@@ -109,7 +109,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Beluga
   _rigidbody2D: {fileID: 5235517345259160190}
   _belugaSprite: {fileID: 3672779437096090200}
+  _animator: {fileID: 4225173850638437333}
   _timeToDie: 10
+  _deathSFX: {fileID: 8300000, guid: 288ed2d1e2a979540b864c0f74d5808a, type: 3}
 --- !u!50 &5235517345259160190
 Rigidbody2D:
   serializedVersion: 5

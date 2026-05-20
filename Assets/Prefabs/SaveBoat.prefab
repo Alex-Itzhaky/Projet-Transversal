@@ -402,6 +402,7 @@ MonoBehaviour:
   _timeToHeal: 5
   isSavingBeluga: 0
   _relay: {fileID: 6457949117893474050}
+  _saveBelugaSFX: {fileID: 8300000, guid: df45e2e8aac21a54db6d3ba91a2a863f, type: 3}
 --- !u!120 &3321075071701639119
 LineRenderer:
   serializedVersion: 3

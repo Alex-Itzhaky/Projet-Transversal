@@ -10,6 +10,8 @@ public class SaveBoat : Boat
 
     [SerializeField] private TriggerRelay _relay;
 
+    [SerializeField] private AudioClip _saveBelugaSFX;
+
     private void Awake()
     {
         _relay.OnTriggered += OnHealEnter;
@@ -51,6 +53,7 @@ public class SaveBoat : Boat
         _currentBoatState = BoatState.Idle;
         _currentTrashZone.currentBelugaTrapped = null;
         _currentTrashZone.isBelugaTrappedInside = false;
+        SoundFXManager.Instance.PlaySoundFXClip(_saveBelugaSFX, transform);
         _canBoatMove = true;
     }
 }

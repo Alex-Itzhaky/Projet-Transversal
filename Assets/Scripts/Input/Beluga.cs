@@ -16,6 +16,7 @@ public class Beluga : MonoBehaviour
     private bool _isBelugaSick = false;
     private bool _isBelugaDead = false;
     [SerializeField] private float _timeToDie;
+    [SerializeField] private AudioClip _deathSFX;
     
     private void BelugaMove()
     {
@@ -118,6 +119,7 @@ public class Beluga : MonoBehaviour
     {
         //Jouer anims
         //d�duire score
+        SoundFXManager.Instance.PlaySoundFXClip(_deathSFX, transform);
         _belugaSprite.DOFade(0, 1).OnComplete( ()=> Destroy(gameObject));
     }
 
