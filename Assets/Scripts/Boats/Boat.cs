@@ -11,7 +11,7 @@ public class Boat : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] protected Rigidbody2D _rb;
-    [SerializeField] protected BoxCollider2D _collider;
+    [SerializeField] protected CircleCollider2D _collider;
     [SerializeField] public Grid grid;
     [SerializeField] public Tilemap islandTilemap;
     
