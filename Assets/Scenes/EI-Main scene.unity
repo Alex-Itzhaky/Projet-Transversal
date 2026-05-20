@@ -259,10 +259,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1197401623351096451, guid: 9cfc724492f77ec4990637c04ee3ef56, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 1547065228360294411, guid: 9cfc724492f77ec4990637c04ee3ef56, type: 3}
       propertyPath: m_Name
       value: TrashBoat
@@ -5302,14 +5298,6 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 5316378433888445958, guid: 25fe2588259e7cf40bee5885fddbf0c9, type: 3}
-    - target: {fileID: 3321075071701639119, guid: ef67b1531e1cebe47bc59ce0d77afb62, type: 3}
-      propertyPath: m_Parameters.textureMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3321075071701639119, guid: ef67b1531e1cebe47bc59ce0d77afb62, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: dbd51c324c289574197b4550c314dbb7, type: 2}
     - target: {fileID: 5317164386192599988, guid: ef67b1531e1cebe47bc59ce0d77afb62, type: 3}
       propertyPath: grid
       value: 
