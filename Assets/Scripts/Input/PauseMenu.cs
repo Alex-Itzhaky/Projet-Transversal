@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
-using UnityEngine.InputSystem;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -13,7 +13,7 @@ public class PauseMenu : MonoBehaviour
     {
         if (InputManager.Instance.IsEscapePressed)
         {
-            if (isGamePaused)
+            if (!isGamePaused)
             {
                 PauseGame();
             }
@@ -26,12 +26,14 @@ public class PauseMenu : MonoBehaviour
 
     public void PauseGame()
     {
+        Time.timeScale = 0f;
         menuPanel.SetActive(true);
         isGamePaused = true;
     }
     
     public void ResumeGame()
     {
+        Time.timeScale = 1f;
         menuPanel.SetActive(false);
         isGamePaused = false;
     }
@@ -50,9 +52,11 @@ public class PauseMenu : MonoBehaviour
     
     public void RestartGame()
     {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     
     public void LeaveGame()
     {
+        SceneManager.LoadScene("MainMenu");
     }
 }

@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
     public bool isGameOverPlaying { get; private set; } = false;
     public UnityEvent GameOver;
 
-    [SerializeField] private SceneAsset _gameOverUI;
+    [SerializeField] private GameObject _gameOverScreen;
 
     private void Awake()
     {
@@ -41,7 +41,7 @@ public class GameManager : MonoBehaviour
         PauseManager.Instance.UnpauseGame();
         if (scene.name == "ScenePrototype" && !isLoadedFromMainMenu)
         {
-            Debug.LogWarning("Le jeu n'a pas été lancé depuis le menu principal. Redirection forcée vers la scène MainMenu...");
+            Debug.LogWarning("Le jeu n'a pas ï¿½tï¿½ lancï¿½ depuis le menu principal. Redirection forcï¿½e vers la scï¿½ne MainMenu...");
             SceneManager.LoadScene("MainMenu");
         }
         isGameOverPlaying = false;
@@ -65,7 +65,7 @@ public class GameManager : MonoBehaviour
 
         yield return new WaitForSecondsRealtime(2);
         PauseManager.Instance.PauseGame();
-        yield return SceneManager.LoadSceneAsync(_gameOverUI.name, LoadSceneMode.Additive);
+        _gameOverScreen.SetActive(true);
 
     }
 }
