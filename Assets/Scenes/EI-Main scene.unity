@@ -754,10 +754,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6829def7ef538b74ea01cd9dbf95ba55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TrashSpawner
-  _trashPrefab: {fileID: 5635447442449653550, guid: 6ed314ec77006644f953409919e1dc37, type: 3}
+  _trashPrefabs:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   _belugaPrefab: {fileID: 7674022743256059370, guid: 8d1b8069b646edf45b597a63e50e5f81, type: 3}
-  _minTrashRadius: 1
-  _maxTrashRadius: 3
+  _smallTrashZoneChance: 0
+  _mediumTrashZoneChance: 0
+  _largeTrashZoneChance: 0
   _areaWidth: 14
   _areaHeight: 10
 --- !u!4 &400528480
@@ -5297,6 +5301,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 5316378433888445958, guid: 25fe2588259e7cf40bee5885fddbf0c9, type: 3}
+    - target: {fileID: 3321075071701639119, guid: ef67b1531e1cebe47bc59ce0d77afb62, type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5317164386192599988, guid: ef67b1531e1cebe47bc59ce0d77afb62, type: 3}
       propertyPath: grid
       value: 
