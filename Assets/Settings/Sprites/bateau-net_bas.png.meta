@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: d1c415b62cc778a4e8b98067dc0614b6
+guid: ba1141ffe6771f34eb4976d465dadefc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1603153735928504590
-    second: "bateau-net_cot\xE9_0"
+      213: -9091669037626179410
+    second: bateau-net_bas_0
   - first:
-      213: 3512885702834647314
-    second: "bateau-net_cot\xE9_1"
+      213: -5841336351406527242
+    second: bateau-net_bas_1
   - first:
-      213: -2396239153731851719
-    second: "bateau-net_cot\xE9_2"
+      213: -7500851171470843293
+    second: bateau-net_bas_2
   - first:
-      213: -3873935957759498773
-    second: "bateau-net_cot\xE9_3"
+      213: -3621608640336368181
+    second: bateau-net_bas_3
   - first:
-      213: 2103789835503237679
-    second: "bateau-net_cot\xE9_4"
+      213: 2298963342441515009
+    second: bateau-net_bas_4
   - first:
-      213: -7988689012405729259
-    second: "bateau-net_cot\xE9_5"
+      213: -1153950164097567074
+    second: bateau-net_bas_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -111,137 +111,150 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "bateau-net_cot\xE9_0"
+      name: bateau-net_bas_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 7
+        y: 0
         width: 32
-        height: 21
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 2fe14a9cb2470c9e0800000000000000
-      internalID: -1603153735928504590
+      spriteID: f64f6c2452cbcd64ba8fefe8f79e40ae
+      internalID: -9091669037626179410
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "bateau-net_cot\xE9_1"
+      name: bateau-net_bas_1
       rect:
         serializedVersion: 2
         x: 32
-        y: 7
+        y: 0
         width: 32
-        height: 21
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 211f1064fe640c030800000000000000
-      internalID: 3512885702834647314
+      spriteID: 633568971b8778f4887403ed098c5888
+      internalID: -5841336351406527242
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "bateau-net_cot\xE9_2"
+      name: bateau-net_bas_2
       rect:
         serializedVersion: 2
         x: 64
-        y: 7
+        y: 0
         width: 32
-        height: 21
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 93a2eec7f29debed0800000000000000
-      internalID: -2396239153731851719
+      spriteID: ceaae3dbe516300439873fd653e6e5e5
+      internalID: -7500851171470843293
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "bateau-net_cot\xE9_3"
+      name: bateau-net_bas_3
       rect:
         serializedVersion: 2
         x: 96
-        y: 7
+        y: 0
         width: 32
-        height: 21
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: be5e12b75c30d3ac0800000000000000
-      internalID: -3873935957759498773
+      spriteID: 80088677022ef004abf5c6bd101a76d5
+      internalID: -3621608640336368181
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "bateau-net_cot\xE9_4"
+      name: bateau-net_bas_4
       rect:
         serializedVersion: 2
         x: 128
-        y: 7
+        y: 0
         width: 32
-        height: 20
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f2a7f3385b9223d10800000000000000
-      internalID: 2103789835503237679
+      spriteID: 3a83712c6359ed2479e729bf400c5066
+      internalID: 2298963342441515009
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "bateau-net_cot\xE9_5"
+      name: bateau-net_bas_5
       rect:
         serializedVersion: 2
         x: 160
-        y: 7
+        y: 0
         width: 32
-        height: 20
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5188d7a4ba9722190800000000000000
-      internalID: -7988689012405729259
+      spriteID: f28a91eeb51951c4998d520a9ff1a24f
+      internalID: -1153950164097567074
       vertices: []
       indices: 
       edges: []
@@ -250,7 +263,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 9a342a04331286942901b1fd4aad992c
     internalID: 0
     vertices: []
     indices: 
@@ -258,14 +271,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      "bateau-net_cot\xE9_0": -1603153735928504590
-      "bateau-net_cot\xE9_1": 3512885702834647314
-      "bateau-net_cot\xE9_2": -2396239153731851719
-      "bateau-net_cot\xE9_3": -3873935957759498773
-      "bateau-net_cot\xE9_4": 2103789835503237679
-      "bateau-net_cot\xE9_5": -7988689012405729259
+      bateau-net_bas_0: -9091669037626179410
+      bateau-net_bas_1: -5841336351406527242
+      bateau-net_bas_2: -7500851171470843293
+      bateau-net_bas_3: -3621608640336368181
+      bateau-net_bas_4: 2298963342441515009
+      bateau-net_bas_5: -1153950164097567074
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

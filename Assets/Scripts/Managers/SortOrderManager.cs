@@ -3,6 +3,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine.Tilemaps;
+using Unity.VisualScripting;
 
 public class SortOrderManager : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class SortOrderManager : MonoBehaviour
 
     private void Update()
     {
+        RemoveDestroyedObjects();
         AddSpritesToRegistry();
         GetYValues();
         SortByValues();
@@ -24,7 +26,7 @@ public class SortOrderManager : MonoBehaviour
         var spriteRenderers = FindObjectsByType<SpriteRenderer>(FindObjectsSortMode.None);
         foreach (SpriteRenderer sprite in spriteRenderers)
         {
-            if (!_spritesRegistry.Any(entry => entry.sprite == sprite))
+            if (!_spritesRegistry.Any(entry => entry.sprite == sprite) && ((1 << sprite.gameObject.layer) & _ignoredLayers) != 0)
                 _spritesRegistry.Add((sprite, 0f));
         }
         //foreach (var sprite in _spritesRegistry)
@@ -66,7 +68,7 @@ public class SortOrderManager : MonoBehaviour
         _spritesRegistry = _spritesRegistry.OrderByDescending(entry => entry.yValue).ToList();
         foreach (var entry in _spritesRegistry)
         {
-            Debug.Log(entry);
+            //Debug.Log(entry);
         }
     }
 
@@ -77,6 +79,16 @@ public class SortOrderManager : MonoBehaviour
         {
             entry.sprite.sortingOrder = order;
             order++;
+        }
+    }
+
+    private void RemoveDestroyedObjects()
+    {
+        var _spritesClone = new List<(SpriteRenderer sprite, float yValue)>(_spritesRegistry);
+        foreach (var entry in _spritesClone)
+        {
+            if (entry.sprite == null)
+                _spritesRegistry.Remove(entry);
         }
     }
 

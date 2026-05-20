@@ -367,7 +367,6 @@ MonoBehaviour:
   _collider: {fileID: 165926896975949034}
   grid: {fileID: 0}
   islandTilemap: {fileID: 0}
-  boatLineRenderer: {fileID: 0}
   _moveSpeed: 3
   _targetPosition: {x: 0, y: 0}
   BoatIsSelected:
@@ -526,7 +525,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BoatLineRenderer
   _boat: {fileID: 5317164386192599988}
-  _lineRenderer: {fileID: 0}
+  _lineRenderer: {fileID: 3321075071701639119}
 --- !u!1 &2254409181074290918
 GameObject:
   m_ObjectHideFlags: 0
