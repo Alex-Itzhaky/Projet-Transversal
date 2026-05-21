@@ -29,6 +29,10 @@ public class Gameloop : MonoBehaviour
     }
     private IEnumerator Start()
     {
+        for (int i = 0; i < 3;  i++)
+        {
+            _eventSpawner.SpawnHydrophone();
+        }
         _eventSpawner.SpawnTrashZone();
         _currentBelugaSpawnTimer = _baseBelugaSpawnTimer;
         _currentTrashSpawnTimer = _baseTrashSpawnTimer;

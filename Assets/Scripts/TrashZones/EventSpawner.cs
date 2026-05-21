@@ -4,6 +4,7 @@ public class EventSpawner : MonoBehaviour
 {
     [SerializeField] private GameObject[] _trashPrefabs = new GameObject[3];
     [SerializeField] private GameObject _belugaPrefab;
+    [SerializeField] private GameObject _hydrophonePrefab;
 
     [Header("TrashZone Size Settings")]
     [SerializeField] private float _smallTrashZoneChance;
@@ -48,6 +49,12 @@ public class EventSpawner : MonoBehaviour
     {
         GameObject belugaInstance = Instantiate(_belugaPrefab);
         belugaInstance.transform.position = GetRandomPosition();
+    }
+
+    public void SpawnHydrophone()
+    {
+        GameObject hydrophoneInstance = Instantiate(_hydrophonePrefab);
+        hydrophoneInstance.transform.position = GetRandomPosition();
     }
 
     //Debugging

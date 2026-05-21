@@ -65,6 +65,8 @@ public class Beluga : MonoBehaviour
             }
         }
 
+        FlipSprite();
+
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -94,6 +96,18 @@ public class Beluga : MonoBehaviour
         {
             Debug.Log("HideBeluga");
             _belugaSprite.DOFade(0, 1);
+        }
+    }
+
+    private void FlipSprite()
+    {
+        if (_rigidbody2D.linearVelocity.x < 0)
+        {
+            _belugaSprite.flipX = true;
+        }
+        else if (_rigidbody2D.linearVelocity.x > 0)
+        {
+            _belugaSprite.flipX = false;
         }
     }
 
