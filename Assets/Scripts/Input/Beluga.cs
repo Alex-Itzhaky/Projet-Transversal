@@ -15,6 +15,7 @@ public class Beluga : MonoBehaviour
     private bool _isBelugaMoving = false;
     private bool _isBelugaSick = false;
     private bool _isBelugaDead = false;
+    private TrashZone _trashZoneTrapped;
     [SerializeField] private float _timeToDie;
     [SerializeField] private AudioClip _deathSFX;
     
@@ -79,12 +80,12 @@ public class Beluga : MonoBehaviour
         if (other.gameObject.CompareTag("Trash"))
         {
             Debug.Log(other.gameObject.tag);
-            TrashZone trashZone = other.gameObject.GetComponent<TrashZone>();
-            Debug.Log(trashZone.name);
-            if (!trashZone.isBelugaTrappedInside)
+            _trashZoneTrapped = other.gameObject.GetComponent<TrashZone>();
+            Debug.Log(_trashZoneTrapped.name);
+            if (!_trashZoneTrapped.isBelugaTrappedInside)
             {
-                trashZone.currentBelugaTrapped = this;
-                trashZone.isBelugaTrappedInside = true;
+                _trashZoneTrapped.currentBelugaTrapped = this;
+                _trashZoneTrapped.isBelugaTrappedInside = true;
                 StartCoroutine(BelugaSicknessCoroutine());
             }
         }
@@ -116,7 +117,11 @@ public class Beluga : MonoBehaviour
         //Jouer les anims/particules si y en a
         //Rajouter les points de reputation
         Debug.Log("Heal Beluga");
+        StopCoroutine(BelugaSicknessCoroutine());
         _belugaSprite.DOFade(0, 1).OnComplete(()=> Destroy(gameObject));
+        _trashZoneTrapped.isBelugaTrappedInside = false;
+        _trashZoneTrapped.currentBelugaTrapped = null;
+        
     }
 
     private IEnumerator BelugaSicknessCoroutine()
@@ -135,6 +140,8 @@ public class Beluga : MonoBehaviour
         //d�duire score
         SoundFXManager.Instance.PlaySoundFXClip(_deathSFX, transform);
         _belugaSprite.DOFade(0, 1).OnComplete( ()=> Destroy(gameObject));
+        _trashZoneTrapped.isBelugaTrappedInside = false;
+        _trashZoneTrapped.currentBelugaTrapped = null;
     }
 
 

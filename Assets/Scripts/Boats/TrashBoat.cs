@@ -4,7 +4,7 @@ using System.Collections;
 public class TrashBoat : Boat
 {
 
-    private GameObject _currentTrashZone;
+    private TrashZone _currentTrashZone;
     [SerializeField] private float _trashCollectDuration;
     public Inventory inventory;
 
@@ -33,7 +33,7 @@ public class TrashBoat : Boat
         Debug.Log("Lock trashZone fini, commence le nettoyage");
         yield return new WaitForSeconds(_trashCollectDuration);
         _currentBoatState = BoatState.Idle;
-        Destroy(_currentTrashZone);
+        Destroy(_currentTrashZone.gameObject);
         inventory.AddPoints(50);
         SoundFXManager.Instance.PlaySoundFXClip(_trashCleanSFX, transform);
         _canBoatMove = true;
@@ -44,10 +44,11 @@ public class TrashBoat : Boat
     {
         if (collision.gameObject.CompareTag("Trash"))
         {
-            if (collision.GetComponent<TrashZone>().isBelugaTrappedInside || _currentBoatState == BoatState.CollectingTrash)
+            if (collision.GetComponent<TrashZone>().isBelugaTrappedInside || _currentBoatState == BoatState.CollectingTrash || collision.GetComponent<TrashZone>().isOccupiedByBoat)
                 return;
             _currentBoatState = BoatState.CollectingTrash;
-            _currentTrashZone = collision.gameObject;
+            _currentTrashZone = collision.GetComponent<TrashZone>();
+            _currentTrashZone.isOccupiedByBoat = true;
             StartCoroutine(CollectTrashCoroutine());
         }
     }

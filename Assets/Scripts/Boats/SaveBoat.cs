@@ -31,11 +31,12 @@ public class SaveBoat : Boat
         {
             TrashZone trashZone = collision.gameObject.GetComponent<TrashZone>();
             Debug.Log(trashZone.isBelugaTrappedInside);
-            if (trashZone.isBelugaTrappedInside)
+            if (trashZone.isBelugaTrappedInside && !trashZone.isOccupiedByBoat)
             {
                 _currentTrashZone = trashZone;
                 _currentBoatState = BoatState.Repairing;
                 _currentBeluga = trashZone.currentBelugaTrapped;
+                _currentTrashZone.isOccupiedByBoat = true;
                 StartCoroutine(HealBelugaCoroutine());
             }
         }
@@ -56,6 +57,7 @@ public class SaveBoat : Boat
         _currentBoatState = BoatState.Idle;
         _currentTrashZone.currentBelugaTrapped = null;
         _currentTrashZone.isBelugaTrappedInside = false;
+        _currentTrashZone.isOccupiedByBoat = false;
         SoundFXManager.Instance.PlaySoundFXClip(_saveBelugaSFX, transform);
         _canBoatMove = true;
         inventory.AddPoints(100);
