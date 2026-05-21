@@ -39,14 +39,14 @@ public class GameManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode loadSceneMode)
     {
-        PauseManager.Instance.UnpauseGame();
+        //PauseManager.Instance.UnpauseGame();
         if (scene.name == "ScenePrototype" && !isLoadedFromMainMenu)
         {
             Debug.LogWarning("Le jeu n'a pas �t� lanc� depuis le menu principal. Redirection forc�e vers la sc�ne MainMenu...");
             SceneManager.LoadScene("MainMenu");
         }
         isGameOverPlaying = false;
-        SoundFXManager.Instance.UnmuteMusic();
+        //SoundFXManager.Instance.UnmuteMusic();
     }
 
     private void OnSceneUnloaded(Scene scene)
@@ -64,10 +64,10 @@ public class GameManager : MonoBehaviour
     private IEnumerator PlayerDeathCoroutine()
     {
         isGameOverPlaying = true;
-        SoundFXManager.Instance.MuteMusic();
+        //SoundFXManager.Instance.MuteMusic();
         SoundFXManager.Instance.PlaySoundFXClip(_gameOverSFX, transform);
         yield return new WaitForSecondsRealtime(2);
-        PauseManager.Instance.PauseGame();
+        //PauseManager.Instance.PauseGame();
         _gameOverScreen.SetActive(true);
 
     }

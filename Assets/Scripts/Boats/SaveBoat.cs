@@ -23,6 +23,8 @@ public class SaveBoat : Boat
         _relay.OnTriggered -= OnHealEnter;
     }
 
+    protected override void OnCollisionEnter2D(Collision2D collision){ }
+
     private void OnHealEnter(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Trash"))

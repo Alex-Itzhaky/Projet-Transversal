@@ -2,6 +2,7 @@ using DG.Tweening;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.SceneManagement;
 
 public class SoundFXManager : MonoBehaviour
 {
@@ -9,10 +10,14 @@ public class SoundFXManager : MonoBehaviour
 
     [SerializeField] private AudioSource _soundFXObject;
     [SerializeField] private AudioSource _musicObject;
-    [SerializeField] private AudioMixer _audioMixer;
+    public AudioMixer _audioMixer { get; private set; }
 
     private float _previousMusicVolume;
     private bool _isMusicMuted;
+
+    private float _storedMasterVolume = 0f;
+    private float _storedSFXVolume = 0f;
+    private float _storedMusicVolume = 0f;
 
     private void Awake()
     {
@@ -82,35 +87,7 @@ public class SoundFXManager : MonoBehaviour
         }
     }
 
-    public void SetMasterVolume(float volume)
-    {
-        if (volume < 0.0001f || volume > 1f)
-        {
-            Debug.LogWarning("Le volume doit rester en 0.0001 et 1");
-            return;
-        }
-        _audioMixer.SetFloat("masterVolume", Mathf.Log10(volume) * 20f);
-    }
-
-    public void SetSoundFXVolume(float volume)
-    {
-        if (volume < 0.0001f || volume > 1f)
-        {
-            Debug.LogWarning("Le volume doit rester en 0.0001 et 1");
-            return;
-        }
-        _audioMixer.SetFloat("SFXVolume", Mathf.Log10(volume) * 20f);
-    }
-
-    public void SetMusicVolume(float volume)
-    {
-        if (volume < 0.0001f || volume > 1f)
-        {
-            Debug.LogWarning("Le volume doit rester en 0.0001 et 1");
-            return;
-        }
-        _audioMixer.SetFloat("musicVolume", Mathf.Log10(volume) * 20f);
-    }
+    
 
     public void MuteMusic()
     {
@@ -129,4 +106,18 @@ public class SoundFXManager : MonoBehaviour
         _audioMixer.SetFloat("musicVolume", _previousMusicVolume);
         _isMusicMuted = false;
     }
+
+    //public void StoreVolumes()
+    //{
+    //    _audioMixer.GetFloat("masterVolume", out _storedMasterVolume);
+    //    _audioMixer.GetFloat("SFXVolume", out _storedSFXVolume);
+    //    _audioMixer.GetFloat("musicVolume", out _storedMusicVolume);
+    //}
+
+    //public void UseStoredVolumes()
+    //{
+    //    _audioMixer.SetFloat("masterVolume", _storedMasterVolume);
+    //    _audioMixer.SetFloat("SFXVolume", _storedSFXVolume);
+    //    _audioMixer.SetFloat("musicVolume", _storedMusicVolume);
+    //}
 }

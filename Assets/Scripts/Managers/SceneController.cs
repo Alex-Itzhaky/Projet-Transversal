@@ -11,20 +11,23 @@ public class SceneController : MonoBehaviour
 
     private IEnumerator Start()
     {
+        //SoundFXManager.Instance.UseStoredVolumes();
         yield return _sceneFade.FadeInCoroutine(_sceneFadeDuration);
     }
+    
 
-    public void LoadScene(SceneAsset scene)
+    public void LoadScene(string scene)
     {
-        StartCoroutine(LoadSceneCoroutine(scene.name));
+        StartCoroutine(LoadSceneCoroutine(scene));
     }
 
     private IEnumerator LoadSceneCoroutine(string sceneName)
     {
+       //SoundFXManager.Instance.StoreVolumes();
         yield return SoundFXManager.Instance.FadeMusicOut(_sceneFadeDuration);
         yield return _sceneFade.FadeOutCoroutine(_sceneFadeDuration);
         yield return SceneManager.LoadSceneAsync(sceneName);
-        PauseManager.Instance.UnpauseGame();
+        //PauseManager.Instance.UnpauseGame();
         SoundFXManager.Instance.FadeMusicIn(_sceneFadeDuration);
     }
 }

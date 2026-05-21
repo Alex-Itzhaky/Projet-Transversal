@@ -8,6 +8,7 @@ TagManager:
   - Trash
   - Boat
   - Hydrophone
+  - Island
   layers:
   - Default
   - TransparentFX

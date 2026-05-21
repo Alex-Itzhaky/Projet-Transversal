@@ -17,16 +17,13 @@ public class MainMenu : MonoBehaviour
 
     private void Start()
     {
-        if (_mainMenuMusic == null)
-            return;
-        if (_isMainMenu)
-            SoundFXManager.Instance.PlayMusicClip(_mainMenuMusic, Camera.main.transform);
+        SoundFXManager.Instance.PlayMusicClip(_mainMenuMusic, Camera.main.transform);
     }
 
     public void PlayGame()
     {
-        //SceneManager.LoadScene("EI-Main scene");
-        OnPlay.Invoke();
+        SceneManager.LoadScene("SceneAlex");
+        OnPlay?.Invoke();
         _isMainMenu = false;
     }
     

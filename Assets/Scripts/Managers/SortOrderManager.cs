@@ -26,13 +26,13 @@ public class SortOrderManager : MonoBehaviour
         var spriteRenderers = FindObjectsByType<SpriteRenderer>(FindObjectsSortMode.None);
         foreach (SpriteRenderer sprite in spriteRenderers)
         {
-            if (!_spritesRegistry.Any(entry => entry.sprite == sprite) && ((1 << sprite.gameObject.layer) & _ignoredLayers) != 0)
+            if (!_spritesRegistry.Any(entry => entry.sprite == sprite) && ((1 << sprite.gameObject.layer) & _ignoredLayers) == 0)
                 _spritesRegistry.Add((sprite, 0f));
         }
-        //foreach (var sprite in _spritesRegistry)
-        //{
-        //    Debug.Log(sprite);
-        //}
+        foreach (var sprite in _spritesRegistry)
+        {
+            Debug.Log(sprite);
+        }
     }
 
     //private void AddTilesToRegistry()
@@ -74,7 +74,7 @@ public class SortOrderManager : MonoBehaviour
 
     private void ApplyOrderInLayer()
     {
-        int order = 1;
+        int order = 2;
         foreach (var entry in _spritesRegistry)
         {
             entry.sprite.sortingOrder = order;
